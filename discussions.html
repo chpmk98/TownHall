@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Community Forum</title>
+        <link rel="stylesheet" type="text/css" href="discussions.css"/>
+        <link rel="stylesheet" type="text/css" href="main.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
+    </head>
+    <body>
+  <div class = "head-bar">
+      <a href="homepage.html">
+        <div id = "websiteName" class = "head-bar-button"> TownHall</div></a>
+      <div id = "myNews" class = "head-bar-button"> My News</div>
+      <a href="discussions.html">
+        <div id = "communityForum" class = "head-bar-button"> Community Forum</div></a>
+      <div id = "talkToYourCity" class = "head-bar-button"> Talk To a City Official </div>
+      <div id = "saved" class = "head-bar-button"> Saved </div>
+      <div id = "search" class = "head-bar-button" > <i class = "material-icons"> search </i> </div>
+      <div id = "profile" class = "head-bar-button"> <i class = "material-icons"> account_circle </i> </div>
+  </div>
+  </div>
+      <div class="content">
+        <div class="left-panel">
+          <div id="discussion-filter" class="filter-box">
+            <div class="box-head">
+              Filter By Topic</div>
+            <div class="Schools-filter" class="filter-option">
+              <input id="Schools-filter-box" type="checkbox" name="Topic" value=1>
+               Schools
+            </div>
+            <div class="Environment-filter" class="filter-option">
+              <input id="Environment-filter-box" type="checkbox" name="Topic" value=1>
+               Environment
+            </div>
+            <div class="Politics-filter" class="filter-option">
+              <input id="Politics-filter-box" type="checkbox" name="Topic" value=1>
+               Politics
+            </div>
+            <div class="Arts-filter" class="filter-option">
+              <input id="Arts-filter-box" type="checkbox" name="Topic" value=1>
+               Arts
+            </div>
+            <div class="Sports-filter" class="filter-option">
+              <input id="Sports-filter-box" type="checkbox" name="Topic" value=1>
+               Sports
+            </div>
+            <!-- THE WORLD IS NOT READY FOR THIS YET
+            <button id="clear-filter-button">Clear Filters</button> -->
+          </div>
+        </div>
+        <div class="right-panel">
+          <div class="right-top-panel">
+            Recent Posts
+            <a href="new-post.html">
+            	<button class="Make-button">Make a New Post</button>
+            </a>
+          </div>
+          <div class="right-bottom-panel">
+            <div id="Arts" class="post-box">
+              <div class="Arts-filter" class="post-category-box">
+              </div>
+              <div class="post-text-box">
+              <span class="box-head">Favorite Theatre in Town? </span>
+              <p>BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH</p>
+              </div>
+            </div>
+            <div id="Schools" class="post-box">
+              <div class="Schools-filter" class="post-category-box">
+              </div>
+              <div class="post-text-box">
+              <a href="general_discussion.html">
+              	<span class="box-head">RE: "Northwestern Responds to New Property Tax Laws" </span> </a>
+              <p>BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH</p>
+              </div>
+            </div>
+            <div id="Environment" class="post-box">
+              <div class="Environment-filter" class="post-category-box">
+              </div>
+              <div class="post-text-box">
+              <span class="box-head">New Bike Recyclery on Sherman</span>
+              <p>BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH</p>
+              </div>
+            </div>
+            <div id="Politics" class="post-box">
+              <div class="Politics-filter" class="post-category-box">
+              </div>
+              <div class="post-text-box">
+              <span class="box-head"> Fall Alderman Elections</span>
+              <p>BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   <script src="main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,92 @@
+/*
+	Global Classes
+					*/
+body {
+  background-repeat: no-repeat;
+  font-family: Trebuchet, sans-serif;
+  background-color: #CDF0f2;
+}
+
+.head-bar {
+  width: 2000px;
+  height: 60px;
+  background-color: #086788;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+.head-bar-button{
+  background-color: #086788;
+  color: #CDF0F2;
+  display: inline-block;
+  height: 30px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  top: 12px;
+}
+
+#websiteName {
+  position: relative;
+  left: 30px;
+}
+
+#myNews {
+  position: relative;
+  left: 20px;
+}
+
+#communityForum {
+  position: relative;
+  left: 40px;
+}
+
+#talkToYourCity {
+  position: relative;
+  left: 60px;
+}
+
+#saved {
+  position: relative;
+  left: 60px;
+}
+
+#search {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  left: 60px;
+  top: 20px;
+}
+
+#profile {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  left: 90px;
+  top: 20px;
+}
+
+/* Filters Attempt */
+#Schools-filter-box
+#Environment-filter-box
+#Politics-filter-box
+#Arts-filter-box
+#Sports-filter-box
+
+#clear-filter-button {
+	position: relative;
+	background-color: #9fed6f;
+	border: none;
+	border-radius: 4px;
+	color: black;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-left: 20px;
+}

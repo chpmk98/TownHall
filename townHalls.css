@@ -1,0 +1,201 @@
+
+
+
+
+body {
+  background-repeat: no-repeat;
+  font-family: Trebuchet, sans-serif;
+  background-color: #CDF0f2;
+
+}
+
+.head-bar {
+  width: 2000px;
+  height: 60px;
+  background-color: #086788;
+  position: relative;
+  top: -10px;
+  left: -10px;
+
+}
+
+.button{
+  background-color: #086788;
+  color: #CDF0F2;
+  display: inline-block;
+  height: 30px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  top: 12px;
+
+}
+
+#websiteName {
+  position: relative;
+  left: 30px;
+
+}
+
+#myNews {
+  position: relative;
+  left: 20px;
+
+}
+
+#communityForum {
+  position: relative;
+  left: 40px;
+
+}
+
+#talkToYourCity {
+  position: relative;
+  left: 60px;
+
+}
+
+#saved {
+  position: relative;
+  left: 60px;
+
+}
+
+#search {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  left: 60px;
+  top: 20px;
+}
+
+#profile {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  left: 90px;
+  top: 20px;
+
+}
+
+#cityInfo {
+  background-color: #9fed6f;
+  width: 1500px;
+  height: 135px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+#cityName {
+  font-size: 500%;
+  position: relative;
+  left: 10px;
+  top: 15px;
+}
+#population {
+  position: relative;
+  top: -40px;
+  left: 660px;
+  font-size: 150%;
+}
+.cityStuff {
+  width: 400px;
+  position: relative;
+  top: -95px;
+  left: 850px;
+}
+
+#title {
+  font-size: 300%;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+#saveForLater {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  left: 65px;
+  text-align: center;
+}
+.newsOrDiscussion {
+  height: 170px;
+  width: 40px;
+  border: 3px solid black;
+  position: relative;
+  left: 240px;
+  top: 60px;
+
+  background-color: white;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.themes {
+  height: 170px;
+  width: 40px;
+  border: 3px solid black;
+  position: relative;
+  left: 285px;
+  top: -116px;
+  border-left: none;
+  border-right: none;
+
+  background-color: white;
+}
+
+.stories {
+  height: 160px;
+  width: 850px;
+  border: 3px solid black;
+  display: inline-block;
+  position: relative;
+  top: -300px;
+  left: 325px;
+  margin-top: 8px;
+  padding: 5px;
+
+  background-color: white;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.blockOne {
+  position: relative;
+  top: -80px;
+}
+
+.blockTwo{
+  position: relative;
+  top: -380px;
+}
+
+.blockThree {
+  position: relative;
+  top: -680px;
+}
+
+p1{
+  font-size: 150%;
+  font-weight: bold;
+}
+
+p2 {
+  position: relative;
+  top: 20px;
+  text-align: left;
+}
+
+.saveBoxes {
+  height: 20px;
+  width: 20px;
+  border: 3px solid black;
+  position: relative;
+  top: 150px;
+  left: 100px;
+
+  border-radius: 4px;
+}
