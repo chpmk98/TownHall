@@ -19,7 +19,7 @@ body {
 
 }
 
-.button{
+.head-bar-button{
   background-color: #086788;
   color: #CDF0F2;
   display: inline-block;
@@ -78,7 +78,7 @@ body {
 
 }
 
-#cityInfo {
+#homepageCityInfo {
   background-color: #9fed6f;
   width: 1500px;
   height: 135px;
@@ -87,7 +87,7 @@ body {
   left: -10px;
 }
 
-#cityName {
+#homepageCityName {
   font-size: 500%;
   position: relative;
   left: 10px;
@@ -99,21 +99,21 @@ body {
   left: 660px;
   font-size: 150%;
 }
-.cityStuff {
+.homepageFunFacts {
   width: 400px;
   position: relative;
   top: -95px;
   left: 850px;
 }
 
-#title {
+#homepageTitle {
   font-size: 300%;
   text-align: center;
   position: relative;
   top: 20px;
 }
 
-#saveForLater {
+#homepageSaveForLater {
   width: 100px;
   height: 100px;
   position: relative;
@@ -163,27 +163,27 @@ body {
   border-bottom-right-radius: 4px;
 }
 
-.blockOne {
+.homepageBlockOne {
   position: relative;
   top: -80px;
 }
 
-.blockTwo{
+.homepageBlockTwo{
   position: relative;
   top: -380px;
 }
 
-.blockThree {
+.homepageBlockThree {
   position: relative;
   top: -680px;
 }
 
-p1{
+.headline{
   font-size: 150%;
   font-weight: bold;
 }
 
-p2 {
+.storyText {
   position: relative;
   top: 20px;
   text-align: left;
