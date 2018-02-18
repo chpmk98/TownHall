@@ -91,7 +91,7 @@ body {
 	margin-left: 20px;
 }
 
-/* Discussion Forum */
+/* Discussion forum specific page and reply page*/
 .original-post {
 	position: relative;
 	width: 100%;
@@ -150,7 +150,7 @@ body {
 	margin: 80px;
 }
 
-/* Discussion forum forms */
+/* Discussion forum reply and new post forms */
 input[type=text] {
 	width: 100%;
 	padding: 12px 20px;
@@ -181,169 +181,4 @@ textarea {
 	border-radius: 4px;
 	background-color: #ffffff;
 	resize: none;
-}
-
-/* Community Forum Main Page elements */
-.content{
-	height: 1000px;
-	width: 1250px;
-	padding: 20px;
-	margin: auto;
-}
-.left-panel{
-  height: 1000px;
-  width:260px;
-  top:25px;
-  position: relative;
-  margin-left: 20px;
-	float: left;
-}
-
-.filter-box{
-  height: 400px;
-  width: 200px;
-  position: relative;
-  margin: auto;
-  top:30px;
-  padding-top: 30px;
-  border-style: solid;
-  border-color: gray;
-  border-width: medium;
-  box-shadow: 5px 1px;
-  text-align: left;
-  background-color: white;
-  border-radius: 4px;
-}
-
-.box-head{
-  text-align: center;
-  font-weight: bold;
-  text-decoration: underline;
-  margin-bottom: 5px;
-  font-size: 120%
-}
-
-.filter-option{
-  height: 20px;
-  width: 150;
-  position: relative;
-  text-align: left;
-	font-size: 110%;
-	margin: auto;
-  margin-top: 10px;
-
-  border-radius: 4px;
-}
-.Schools-filter{
-	border-style: solid;
-	border-width:thick;
-	border-color: #6E06AA;
-}
-
-.Environment-filter{
-	border-style: solid;
-	border-width:thick;
-	border-color: #AAE800;
-}
-
-.Politics-filter{
-	border-style: solid;
-	border-width:thick;
-	border-color: #1F40C4;
-}
-
-.Arts-filter{
-	border-style: solid;
-	border-width:thick;
-	border-color: #F45D11;
-}
-
-.Sports-filter{
-	border-style: solid;
-	border-width:thick;
-	border-color: #E8CE09;
-}
-.right-panel{
-  height: 1000px;
-  width: 800px;
-  position: relative;
-  top:25px;
-  padding-right: 120px;
-  padding-left: 30px;
-	float: right;
-}
-.right-top-panel{
-  height: 80px;
-  width: 800px;
-  top:30px;
-	padding-left: 80px;
-  position: relative;
-  font-size: 250%;
-  font-weight: bold;
-	margin: auto;
-}
-
-.Make-button{
-background-color: #9fed6f;
-border: none;
-border-radius: 4px;
-color: black;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 4px 2px;
-cursor: pointer;
-margin-left: 50px;
-}
-
-.right-bottom-panel{
-  height: 700px;
-  width: 800px;
-  margin: auto;
-  padding-left: 50px;
-  position: relative;
-	top: 10px;
-}
-
-.posts{
-  height: 800px;
-  width: 800px;
-  position: relative;
-}
-.post-box{
-  height: 200px;
-  width: 750px;
-  position: relative;
-  border-style: solid;
-  border-color: gray;
-  border-width: medium;
-  text-align: left;
-  margin: 10px;
-  display: inline-block;
-
-  background-color: white;
-  border-radius: 4px;
-  float: left;
-}
-
-.post-category-box{
-  height: 190;
-  width: 40;
-  position: relative;
-  border-right-style: solid;
-  border-right-color: gray;
-  border-width: medium;
-  text-align: left;
-  float: left;
-}
-
-.post-text-box{
-  height: 165;
-  width: 652;
-  position: relative;
-  padding: 20px;
-  text-align: left;
-  float: right;
 }
