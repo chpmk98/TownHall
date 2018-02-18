@@ -68,6 +68,131 @@ body {
   top: 20px;
 }
 
+
+?* HomePage */
+
+#homepageCityInfo {   /*this is the green bar across the top, holding cityname, population, and funFacts */
+  background-color: #9fed6f;
+  width: 1500px;
+  height: 135px;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+#homepageCityName {
+  font-size: 500%;
+  position: relative;
+  left: 10px;
+  top: 15px;
+}
+#population {
+  position: relative;
+  top: -40px;
+  left: 660px;
+  font-size: 150%;
+}
+.homepageFunFacts {
+  width: 400px;
+  position: relative;
+  top: -95px;
+  left: 850px;
+}
+
+#homepageTitle {
+  font-size: 300%;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+#homepageSaveForLater {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 100px;
+  left: 65px;
+  text-align: center;
+}
+.newsOrDiscussion {   /*this is the side filter on the boxes indicating if its news or discussion */
+  height: 170px;
+  width: 40px;
+  border: 3px solid black;
+  position: relative;
+  left: 240px;
+  top: 60px;
+
+  background-color: white;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.themes {  /*this is the side filter on the box indicating its subject matter--environment, schools, etc */
+  height: 170px;
+  width: 40px;
+  border: 3px solid black;
+  position: relative;
+  left: 285px;
+  top: -116px;
+  border-left: none;
+  border-right: none;
+
+  background-color: white;
+}
+
+.stories {
+  height: 160px;
+  width: 850px;
+  border: 3px solid black;
+  display: inline-block;
+  position: relative;
+  top: -300px;
+  left: 325px;
+  margin-top: 8px;
+  padding: 5px;
+
+  background-color: white;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.homepageBlockOne {
+  position: relative;
+  top: -80px;
+}
+
+.homepageBlockTwo{
+  position: relative;
+  top: -380px;
+}
+
+.homepageBlockThree {
+  position: relative;
+  top: -680px;
+}
+
+.headline{
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.storyText {
+  position: relative;
+  top: 20px;
+  text-align: left;
+}
+
+.saveBoxes {
+  height: 20px;
+  width: 20px;
+  border: 3px solid black;
+  position: relative;
+  top: 150px;
+  left: 100px;
+
+  border-radius: 4px;
+}
+
 /* Filters Attempt */
 #Schools-filter-box
 #Environment-filter-box
