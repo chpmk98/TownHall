@@ -1,0 +1,64 @@
+#article-content{
+  padding-top: 60px
+}
+#frame-panel{
+  width:850px;
+  height:100%;
+  left:-25px;
+  top:-20px;
+  padding: 0;
+  display: inline-block;
+}
+
+#links-panel{
+  width:250px;
+  height:600px;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  position: sticky;
+
+}
+
+iframe{
+  width:100%;
+  height:100%;
+  margin: 0px;
+  padding:0px;
+  position: relative;
+  overflow: auto;
+  border-color: gray;
+  border-style: solid;
+}
+
+.framecover{
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0;
+  top:0;
+  left: 0;
+  position: absolute;
+}
+
+.linksbox{
+  width: 325px;
+  height: 300px;
+  font-size: 125%;
+  padding: 0;
+  margin: 0;
+  top:10px;
+  position: relative;
+}
+
+#related-discussions{
+  margin: 0;
+  display: inline-block;
+  float: left;
+}
+
+#related-articles{
+  margin: 0;
+  display: inline-block;
+  float: left;
+}
