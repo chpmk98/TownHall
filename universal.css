@@ -1,0 +1,69 @@
+/*
+	Global Classes
+					*/
+body {
+  background-repeat: no-repeat;
+  font-family: Trebuchet, sans-serif;
+  background-color: #CDF0f2;
+}
+
+.head-bar {
+  width: 100%;
+  height: 60px;
+  background-color: #086788;
+  position: relative;
+  top: -10px;
+  margin: 0px;
+}
+
+.head-bar-button{
+  background-color: #086788;
+  color: #CDF0F2;
+  display: inline-block;
+  height: 30px;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  top: 12px;
+}
+
+#websiteName {
+  position: relative;
+  left: 30px;
+}
+
+#myNews {
+  position: relative;
+  left: 20px;
+}
+
+#communityForum {
+  position: relative;
+  left: 40px;
+}
+
+#talkToYourCity {
+  position: relative;
+  left: 60px;
+}
+
+#saved {
+  position: relative;
+  left: 60px;
+}
+
+#search {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  left: 60px;
+  top: 20px;
+}
+
+#profile {
+  position: relative;
+  width: 50px;
+  height: 30px;
+  left: 90px;
+  top: 20px;
+}
