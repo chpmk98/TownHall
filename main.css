@@ -73,7 +73,7 @@ body {
 
 #homepageCityInfo {   /*this is the green bar across the top, holding cityname, population, and funFacts */
   background-color: #9fed6f;
-  width: 1500px;
+  width: 100%;
   height: 135px;
   position: relative;
   top: -10px;
