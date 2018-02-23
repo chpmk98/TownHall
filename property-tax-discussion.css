@@ -1,33 +1,30 @@
-﻿body {
-	font-family: Trebuchet MS, sans-serif;
-}
 
-.head-bar {
-	background-color: #CEF372;
-}
-
+/* Discussion forum specific page and reply page*/
 .original-post {
 	position: relative;
-	width: max-width;
+	width: 100%;
 	min-height: 50px;
 	overflow: hidden;
 	border: 5px solid rgb(132, 132, 132);
 	padding: 40px;
-	margin: 40px;
-
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 0px;
 	background-color: white;
 	border-radius: 4px;
 }
 
 .reply-post {
 	position: relative;
-	width: max-width;
-	min-height: 50px;
+	width: 94%;
+	min-height: 0px;
 	overflow: hidden;
 	border: 5px solid rgb(132, 132, 132);
+	border-top: 0px;
 	padding: 40px;
-	margin: 40px;
-
+	margin: 0px 40px;
+	left: 70px;
 	background-color: white;
 	border-radius: 4px;
 }
@@ -40,6 +37,8 @@
 .post-body {
 	font-size: 18px;
 	margin: 10px;
+	min-height: 0px;
+	overflow: hidden;
 }
 
 .reply-button {
@@ -64,6 +63,7 @@
 	margin: 80px;
 }
 
+/* Discussion forum reply and new post forms */
 input[type=text] {
 	width: 100%;
 	padding: 12px 20px;
