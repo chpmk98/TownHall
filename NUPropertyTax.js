@@ -25,5 +25,6 @@ function submitReply() {
 
 function cancelReply() {
 	var index = this.id.slice(-1);
+	document.getElementById("NUProperty-r-main-body-"+index).value = "";
 	document.getElementById("NUProperty-r-main-"+index).style.display = "none";
 }
