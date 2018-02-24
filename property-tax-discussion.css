@@ -26,7 +26,7 @@
 	left: 70px;
 	background-color: white;
 	border-radius: 4px;
-	float: right;
+	float: left;
 }
 
 .reply-reply-post {
@@ -40,7 +40,7 @@
 	left: 70px;
 	background-color: white;
 	border-radius: 4px;
-	float: right;
+	float: left;
 }
 
 .post-heading {
