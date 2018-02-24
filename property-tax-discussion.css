@@ -18,7 +18,20 @@
 .reply-post {
 	position: relative;
 	width: 94%;
-	min-height: 0px;
+	overflow: hidden;
+	border: 5px solid rgb(132, 132, 132);
+	border-top: 0px;
+	padding: 40px;
+	margin: 0px 40px;
+	left: 70px;
+	background-color: white;
+	border-radius: 4px;
+	float: right;
+}
+
+.reply-reply-post {
+	position: relative;
+	width: 88%;
 	overflow: hidden;
 	border: 5px solid rgb(132, 132, 132);
 	border-top: 0px;
