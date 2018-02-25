@@ -52,10 +52,49 @@
           <div class="right-top-panel">
             Recent Posts
             <a href="new-post.html">
-            	<button class="Make-button">Make a New Post</button>
+            	<button id="man-butt" class="Make-button">Make a New Post</button>
             </a>
           </div>
           <div class="right-bottom-panel">
+            
+              <!-- NEW STUFF HERE!! (2/25) -->
+          	<div class="new-post" id="that-box-thing">
+				<h2 id="new-post-header">New Post:</h2>
+				<form>
+					Subject line:<br>
+					<input type="text" id="np-sub"><br>
+					Content:<br>
+					<textarea id="np-cont"></textarea><br><br>
+					<div>
+						Topic:
+						<input type="radio" name="topic" value="Schools-filter">
+						<label>Schools</label>
+						<input type="radio" name="topic" value="Environment-filter">
+						<label>Environment</label>
+						<input type="radio" name="topic" value="Politics-filter">
+						<label>Politics</label>
+						<input type="radio" name="topic" value="Arts-filter">
+						<label>Arts</label>
+						<input type="radio" name="topic" value="Sports-filter">
+						<label>Sports</label>
+						<input type="radio" name="topic" value="Other-filter" checked>
+						<label>Other</label>
+					</div><br>
+					<input type="button" id="s-np" value="Submit">
+					<input type="button" id="c-np" value="Cancel">
+				</form>
+			</div>
+
+			<div id="New-post-b" class="post-box">
+              <div id="New-post-cb" class="" class="post-category-box">
+              </div>
+              <div class="post-text-box">
+              <span id="np-subline" class="box-head"></span>
+              <p id="np-content"></p>
+              </div>
+            </div>
+			<!-- NEW STUFF ENDS HERE (2/25) -->
+              
             <div id="Arts" class="post-box">
               <div class="Arts-filter" class="post-category-box">
               </div>
