@@ -12,27 +12,31 @@
 }
 
 .talkLine{
-  margin: 5px;
+  margin: 0px;
 }
 #talkFirstName{
   position: relative;
   left: 48px;
   margin: 15px;
+  height: 30px; 
 }
 
 #talkLastName {
+  height: 30px; 
   position: relative;
   left: 49px;
   margin: 15px; 
 }
 
 #talkStreetAddress{
+  height: 30px; 
   position: relative;
   left: 21px;
   margin: 15px; 
 }
 
 #talkTopic {
+  height: 30px; 
   position: relative;
   left: 90px;
   width: 166px;
@@ -41,6 +45,7 @@
 }
 
 #talkSubject {
+  height: 30px; 
   position: relative;
   left: 74px;
   margin: 15px; 
@@ -48,7 +53,7 @@
 
 #talkMessage{
   position: relative;
-  top: -80px;
+  top: -150px;
   margin: 15px; 
 }
 
