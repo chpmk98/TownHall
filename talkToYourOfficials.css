@@ -13,6 +13,7 @@
 
 .talkLine{
   margin: 0px;
+  height: 30px; 
 }
 #talkFirstName{
   position: relative;
