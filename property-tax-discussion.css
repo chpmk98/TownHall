@@ -88,7 +88,7 @@ input[type=text] {
 }
 
 input[type=button] {
-	background-color: #9fed6f;
+	background-color: #99d3df;
 	border: none;
 	color: black;
 	padding: 16px 32px;
@@ -121,11 +121,11 @@ textarea {
 #NUProperty-nr-3 {display: none;}
 
 .submit-reply-button {
-	border: 2px solid #9fed6f; 
+	border: 2px solid #99d3df; 
 	border-radius: 40px;
 	width: 60px;
 	height: 40px;
-	background-color: #9fed6f;
+	background-color: #99d3df;
 	font-weight: bolder;
 	position: relative;
 	float: right;
