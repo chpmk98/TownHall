@@ -6,6 +6,7 @@ body {
   font-family: Trebuchet, sans-serif;
   background-color: #CDF0f2;
   margin: 0px; 
+  padding: 0px;
   width: 100%;
 }
 
@@ -16,6 +17,7 @@ body {
   position: relative;
   top: -10px;
   margin: 0px;
+  padding: 0px;
 }
 
 .head-bar-button{
