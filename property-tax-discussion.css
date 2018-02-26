@@ -2,7 +2,7 @@
 /* Discussion forum specific page and reply page*/
 .original-post {
 	position: relative;
-	width: 900px;
+	width: 800px;
 	min-height: 50px;
 	overflow: hidden;
 	border: 5px solid rgb(132, 132, 132);
@@ -17,7 +17,7 @@
 
 .reply-post {
 	position: relative;
-	width: 870px;
+	width: 770px;
 	overflow: hidden;
 	border: 5px solid rgb(132, 132, 132);
 	border-top: 0px;
@@ -31,7 +31,7 @@
 
 .reply-reply-post {
 	position: relative;
-	width: 88%;
+	width: 740px;
 	overflow: hidden;
 	border: 5px solid rgb(132, 132, 132);
 	border-top: 0px;
