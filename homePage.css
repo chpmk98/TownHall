@@ -85,6 +85,8 @@ body {
   position: relative;
   top: -10px;
   left: -10px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #homepageCityName {
@@ -92,18 +94,24 @@ body {
   position: relative;
   left: 10px;
   top: 15px;
+  margin: 0px;
+  padding: 0px;
 }
 #population {
   position: relative;
   top: -40px;
   left: 660px;
   font-size: 150%;
+  margin: 0px;
+  padding: 0px;
 }
 .homepageFunFacts {
   width: 400px;
   position: relative;
   top: -95px;
   left: 850px;
+  margin: 0px;
+  padding: 0px;
 }
 
 #homepageTitle {
