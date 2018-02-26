@@ -149,7 +149,7 @@ body {
 
 .stories {
   height: 160px;
-  width: 850px;
+  width: 100%;
   border: 3px solid black;
   display: inline-block;
   position: relative;
