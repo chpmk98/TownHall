@@ -42,7 +42,7 @@
     <div class = "talkLine">
       Topic
       <select id = "talkTopic">
-        <option disabled selected value> -- select an option -- </option>
+        <option value = "default"> -- select an option -- </option>
         <option value="Infrastructure">Infrastructure</option>
         <option value="Zoning">Zoning</option>
         <option value="City Services">City Services</option>
@@ -55,19 +55,14 @@
     </div>
 
     <div id = "talkMessage" class = "talkLine">
-      Message <textarea id="talkMessageBox"></textarea> 
+      Message <textarea id="talkMessageBox"></textarea>
     </div>
 
     <div id = "talkSubmit">
-      <a href = "cityOfficialsComplete.html">
-        <button> Submit </button>
-      </a>
+        <button onclick = "submitForm()"> Submit </button>
     </div>
 
   </div>
-
-
-
 
 
 
