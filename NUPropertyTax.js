@@ -32,4 +32,6 @@ function cancelReply() {
 
 function borderChange(index){
 	document.getElementById("NUProperty-nr-"+index).style.border-top = "0px";
-	document.getElementById("NUProperty-r-main-body-"+index+1).style.border-top = "5px";
+	var i = parseInt(index)+1;
+	document.getElementById("NUProperty-r-main-body-"+i).style.border-top = "5px";
+}
