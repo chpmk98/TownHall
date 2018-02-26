@@ -21,6 +21,7 @@ function submitReply() {
 	document.getElementById("NUProperty-r-main-"+index).style.display = "none";
 	document.getElementById("NUProperty-nr-body-"+index).innerHTML = text;
 	document.getElementById("NUProperty-nr-"+index).style.display = "initial";
+	borderChange(index); // New line...
 }
 
 function cancelReply() {
@@ -29,6 +30,6 @@ function cancelReply() {
 	document.getElementById("NUProperty-r-main-"+index).style.display = "none";
 }
 
-function borderChange(){
+function borderChange(index){
 	document.getElementById("NUProperty-nr-"+index).style.border-top = "0px";
 	document.getElementById("NUProperty-r-main-body-"+index+1).style.border-top = "5px";
