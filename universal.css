@@ -1,6 +1,13 @@
 /*
 	Global Classes
-					*/
+*/
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 body {
   background-repeat: no-repeat;
   font-family: Trebuchet, sans-serif;
