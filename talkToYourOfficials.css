@@ -1,8 +1,20 @@
+
+
+input[type = "text"] {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+textarea{
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+
 #talkTitle {
   font-size: 30px;
   margin: 25px;
-  
-
+  margin-bottom: 10px;
 }
 
 #talkForm {
@@ -13,65 +25,67 @@
 
 .talkLine{
   margin: 15px;
-  height: 30px; 
+  height: 30px;
 }
 #talkFirstName{
   position: relative;
   left: 48px;
   margin: 15px;
-  height: 30px; 
+  height: 30px;
 }
 
 #talkLastName {
-  height: 30px; 
+  height: 30px;
   position: relative;
   left: 49px;
-  margin: 15px; 
+  margin: 15px;
 }
 
 #talkStreetAddress{
-  height: 30px; 
+  height: 30px;
   position: relative;
   left: 21px;
-  margin: 15px; 
+  margin: 15px;
 }
 
 #talkTopic {
-  height: 30px; 
+  height: 30px;
   position: relative;
   left: 90px;
   width: 166px;
   z-index: 1;
-  margin: 15px; 
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 #talkSubject {
-  height: 30px; 
+  height: 30px;
   position: relative;
   left: 74px;
-  margin: 15px; 
+  margin: 15px;
 }
 
 #talkMessage{
   position: relative;
-  top: -150px;
-  margin: 15px; 
+  top: -160px;
+  margin: 15px;
 }
 
 #talkMessageBox{
   width: 600px;
   height: 200px;
   position: relative;
-  top: 197px;
+  top: 187px;
   left: 78px
 }
 
 
 #talkSubmit{
-  margin: 15px; 
+  margin: 15px;
   position: relative;
   left: 690px;
-  top: 190px; 
+  top: 210px;
 }
 
 #talkThankYou {
