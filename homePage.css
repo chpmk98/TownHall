@@ -1,92 +1,12 @@
 
 
-
-
-body {
-  background-repeat: no-repeat;
-  font-family: Trebuchet, sans-serif;
-  background-color: #CDF0f2;
-
-}
-
-.head-bar {
-  width: 100%;
-  height: 60px;
-  background-color: #086788;
-  position: relative;
-  top: -10px;
-  left: -10px;
-
-}
-
-.head-bar-button{
-  background-color: #086788;
-  color: #CDF0F2;
-  display: inline-block;
-  height: 30px;
-  width: 200px;
-  text-align: center;
-  position: relative;
-  top: 12px;
-
-}
-
-#websiteName {
-  position: relative;
-  left: 30px;
-
-}
-
-#myNews {
-  position: relative;
-  left: 20px;
-
-}
-
-#communityForum {
-  position: relative;
-  left: 40px;
-
-}
-
-#talkToYourCity {
-  position: relative;
-  left: 60px;
-
-}
-
-#saved {
-  position: relative;
-  left: 60px;
-
-}
-
-#search {
-  position: relative;
-  width: 50px;
-  height: 30px;
-  left: 60px;
-  top: 20px;
-}
-
-#profile {
-  position: relative;
-  width: 50px;
-  height: 30px;
-  left: 90px;
-  top: 20px;
-
-}
-
 #homepageCityInfo {
-  background-color: #9fed6f;
+  background-color: #99d3df;
   width: 100%;
   height: 135px;
   position: relative;
   top: -10px;
-  left: -10px;
-  margin: 0px;
-  padding: 0px;
+
 }
 
 #homepageCityName {
@@ -94,24 +14,18 @@ body {
   position: relative;
   left: 10px;
   top: 15px;
-  margin: 0px;
-  padding: 0px;
 }
 #population {
   position: relative;
   top: -40px;
   left: 660px;
   font-size: 150%;
-  margin: 0px;
-  padding: 0px;
 }
 .homepageFunFacts {
   width: 400px;
   position: relative;
   top: -95px;
   left: 850px;
-  margin: 0px;
-  padding: 0px;
 }
 
 #homepageTitle {
@@ -157,7 +71,7 @@ body {
 
 .stories {
   height: 160px;
-  width: 100%;
+  width: 850px;
   border: 3px solid black;
   display: inline-block;
   position: relative;
@@ -207,5 +121,3 @@ body {
 
   border-radius: 4px;
 }
-
-
