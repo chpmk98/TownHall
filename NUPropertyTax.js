@@ -31,7 +31,7 @@ function cancelReply() {
 }
 
 function borderChange(index){
-	document.getElementById("NUProperty-nr-"+index).style.border-top = "0px";
+	document.getElementById("NUProperty-nr-"+index).style.borderTop = "0px";
 	var i = parseInt(index)+1;
-	document.getElementById("NUProperty-r-main-body-"+i).style.border-top = "5px";
+	document.getElementById("NUProperty-r-main-body-"+i).style.borderTop = "5px";
 }
