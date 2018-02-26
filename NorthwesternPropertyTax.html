@@ -1,19 +1,18 @@
 <head>
 	<title>Northwestern Property Tax</title>
   <link rel="stylesheet" type="text/css" href="ArticlePage.css" />
-  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="universal.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
      rel="stylesheet">
 </head>
 <body>
   <div class = "head-bar">
-      <a href="homePage.html">
+      <a href="homepage.html">
         <div id = "websiteName" class = "head-bar-button"> TownHall</div></a>
       <div id = "myNews" class = "head-bar-button"> My News</div>
       <a href="CommunityForum.html">
         <div id = "communityForum" class = "head-bar-button"> Community Forum</div></a>
-      <a href = "talkToYourOfficials.html">
-	<div id = "talkToYourCity" class = "head-bar-button"> Talk To a City Official </div> </a>
+      <div id = "talkToYourCity" class = "head-bar-button"> Talk To a City Official </div>
       <div id = "saved" class = "head-bar-button"> Saved </div>
       <div id = "search" class = "head-bar-button" > <i class = "material-icons"> search </i> </div>
       <div id = "profile" class = "head-bar-button"> <i class = "material-icons"> account_circle </i> </div>
@@ -24,17 +23,20 @@
       </iframe>
     </div>
     <div id = "links-panel" class="right-panel">
-        <div id="related-discussions" class="linksbox">
-          <em>Discussion</em>
-          <ul>
-            <li><a heref="file:///Users/maddiehong/Documents/EECS330/chpmk98.github.io-master/property-tax-discussion.html">
-              RE: "Northwestern Responds to New Property Tax Laws"</a></li>
+        <div id="related-discussions" class="links-box">
+          <span class="links-header">Discussion</span class="links-header">
+          <ul class="links-list">
+            <a href="property-tax-discussion.html"><li>
+              RE: "Northwestern Responds to New Property Tax Laws"</li></a>
             <li>Hey Northwestern, pay your taxes!</li>
           </ul>
+          <a href="new-post.html">
+            <button class="Make-button">Make a New Post</button>
+          </a>
         </div>
-        <div id="related-articles" class="linksbox">
-          <em>Related Articles</em>
-          <ul>
+        <div id="related-articles" class="links-box">
+          <span class="links-header">Related Articles</span class="links-header">
+          <ul class="links-list">
             <li>Evanston Set For Research Park Property Tax Deal</li>
             <li>Northwestern Seeks New Tax Deal</li>
             <li> New Zoning Plans for Downtown Evanston</li>
