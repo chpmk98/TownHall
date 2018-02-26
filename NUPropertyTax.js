@@ -28,3 +28,7 @@ function cancelReply() {
 	document.getElementById("NUProperty-r-main-body-"+index).value = "";
 	document.getElementById("NUProperty-r-main-"+index).style.display = "none";
 }
+
+function borderChange(){
+	document.getElementById("NUProperty-nr-"+index).style.border-top = 0px;
+	document.getElementById("NUProperty-r-main-body-"+index+1).style.border-top = 5px;
