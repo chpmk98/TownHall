@@ -30,5 +30,5 @@ function cancelReply() {
 }
 
 function borderChange(){
-	document.getElementById("NUProperty-nr-"+index).style.border-top = 0px;
-	document.getElementById("NUProperty-r-main-body-"+index+1).style.border-top = 5px;
+	document.getElementById("NUProperty-nr-"+index).style.border-top = "0px";
+	document.getElementById("NUProperty-r-main-body-"+index+1).style.border-top = "5px";
