@@ -1,35 +1,25 @@
 /*
 	Global Classes
-*/
-
-
-a{
-  text-decoration: none;
-  color: black;
-}
-
+					*/
 body {
   background-repeat: no-repeat;
   font-family: Trebuchet, sans-serif;
-  background-color: #CDF0f2;
-  margin: 0px; 
-  padding: 0px;
-  width: 100%;
+  background-color: #e9e9e9;
+  margin: 0px;
 }
 
 .head-bar {
   width: 100%;
   height: 60px;
-  background-color: #086788;
+  background-color: #405763;
   position: relative;
   top: -10px;
   margin: 0px;
-  padding: 0px;
 }
 
 .head-bar-button{
-  background-color: #086788;
-  color: #CDF0F2;
+  background-color: #405763;
+  color: white;
   display: inline-block;
   height: 30px;
   width: 200px;
