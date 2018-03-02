@@ -1,4 +1,9 @@
 
+#websiteName {
+  position: relative;
+  left: 30px;
+  text-decoration: underline; 
+}
 
 #homepageCityInfo {
   background-color: #99d3df;
