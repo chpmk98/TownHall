@@ -2,6 +2,7 @@
 
 <head>
 	<title>Create a New Account</title>
+	<link rel="stylesheet" type="text/css" href="CommunityForum.css"/>
 	  <link rel="stylesheet" type="text/css" href="user-profile.css"/>
   <link rel = "stylesheet" type = "text/css" href = "universal.css"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -52,16 +53,32 @@
 			Zipcode 3 <input type="text" id="talkStreetAddress">
 		</div>
 
-		<div class="talkLine">
-			Select Your Interests
-			<select id="talkTopic">
-				<option value="default"> -- select an option -- </option>
-				<option value="Environment">Environment</option>
-				<option value="Politics">Politics</option>
-				<option value="City Services">City Services</option>
-				<option value="Other">Other</option>
-			</select>
-		</div>
+	<div class="new-post" id="that-box-thing">
+			<h2 id="new-post-header">New Post:</h2>
+			<form>
+				Subject line:<br>
+				<input type="text" id="np-sub"><br>
+				Content:<br>
+				<textarea id="np-cont"></textarea><br><br>
+				<div>
+					Topic:
+					<input type="radio" name="topic" value="Schools-filter">
+					<label>Schools</label>
+					<input type="radio" name="topic" value="Environment-filter">
+					<label>Environment</label>
+					<input type="radio" name="topic" value="Politics-filter">
+					<label>Politics</label>
+					<input type="radio" name="topic" value="Arts-filter">
+					<label>Arts</label>
+					<input type="radio" name="topic" value="Sports-filter">
+					<label>Sports</label>
+					<input type="radio" name="topic" value="Other-filter" checked>
+					<label>Other</label>
+				</div><br>
+				<input type="button" id="s-np" value="Submit">
+				<input type="button" id="c-np" value="Cancel">
+			</form>
+		  </div>
 
 		<div id="talkMessage" class="talkLine">
 			Tell Us About Yourself (optional): <textarea id="talkMessageBox"></textarea>
