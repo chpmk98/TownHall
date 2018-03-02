@@ -1,7 +1,7 @@
 <head>
 	<title>Northwestern Property Tax</title>
+	<link rel="stylesheet" type="text/css" href="universal.css" />
   <link rel="stylesheet" type="text/css" href="ArticlePage.css" />
-  <link rel="stylesheet" type="text/css" href="universal.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
      rel="stylesheet">
 </head>
@@ -31,9 +31,41 @@
               RE: "Northwestern Responds to New Property Tax Laws"</li></a>
             <li>Hey Northwestern, pay your taxes!</li>
           </ul>
-          <a href="new-post.html">
             <button class="Make-button">Make a New Post</button>
-          </a>
+							<div class="new-post" id="that-box-thing">
+				<h2 id="new-post-header">New Post:</h2>
+				<form>
+					Subject line:<br>
+					<input type="text" id="np-sub"><br>
+					Content:<br>
+					<textarea id="np-cont"></textarea><br><br>
+					<div>
+						Topic:
+						<input type="radio" name="topic" value="Schools-filter">
+						<label>Schools</label>
+						<input type="radio" name="topic" value="Environment-filter">
+						<label>Environment</label>
+						<input type="radio" name="topic" value="Politics-filter">
+						<label>Politics</label>
+						<input type="radio" name="topic" value="Arts-filter">
+						<label>Arts</label>
+						<input type="radio" name="topic" value="Sports-filter">
+						<label>Sports</label>
+						<input type="radio" name="topic" value="Other-filter" checked>
+						<label>Other</label>
+					</div><br>
+					<input type="button" id="s-np" value="Submit">
+					<input type="button" id="c-np" value="Cancel">
+				</form>
+				</div>
+
+				<div id="New-post-b" class="post-box">
+					<div id="New-post-cb" class="" class="post-category-box"></div>
+					<div class="post-text-box">
+						<span id="np-subline" class="box-head"></span>
+						<p id="np-content"></p>
+					</div>
+				</div>
         </div>
         <div id="related-articles" class="links-box">
           <span class="links-header">Related Articles</span class="links-header">
