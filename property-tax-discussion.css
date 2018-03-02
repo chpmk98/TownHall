@@ -1,5 +1,11 @@
 
 /* Discussion forum specific page and reply page*/
+
+#communityForum {
+  position: relative;
+  left: 40px;
+  text-decoration: underline;
+}
 .original-post {
 	position: relative;
 	width: 1100px;
