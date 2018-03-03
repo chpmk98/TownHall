@@ -1,0 +1,105 @@
+﻿<html>
+
+<head>
+	<title>Create a New Account</title>
+	<link rel="stylesheet" type="text/css" href="createAccount.css" />
+	<link rel="stylesheet" type="text/css" href="universal.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		  rel="stylesheet">
+</head>
+
+<body>
+	<div class="head-bar">
+		<a href="homePage.html">
+			<div id="websiteName" class="head-bar-button"> TownHall</div>
+		</a>
+		<div id="myNews" class="head-bar-button"> My News</div>
+		<a href="CommunityForum.html">
+			<div id="communityForum" class="head-bar-button"> Community Forum</div>
+		</a>
+		<a href="talkToYourOfficials.html">
+			<div id="talkToYourCity" class="head-bar-button"> Talk To a City Official </div>
+		</a>
+		<div id="saved" class="head-bar-button"> Saved </div>
+		<div id="search" class="head-bar-button"> <i class="material-icons"> search </i> </div>
+		<a href="user-profile.html">
+			<div id="profile" class="head-bar-button"> <i class="material-icons"> account_circle </i> </div>
+		</a>
+	</div>
+
+	<div id="title">
+		Create a New Account
+	</div>
+
+	<div id="form">
+		<div class="entry">
+			<div class="heading">Email <br /><input type="text" id="email_username"></div>
+		</div>
+
+		<div class="entry">
+			<div class="heading">
+				Password <br /><input type="password" id="password"></div>
+			</div>
+
+		<div class="entry">
+			<div class="heading">
+				Confirm Password <br /><input type="password" id="passwordConfirm"></div>
+			</div>
+
+			<div class="zipcodeInstructions">
+				You may enter up to three zipcodes for cities you want to receive news about:
+			</div>
+
+		<div class="entry">
+			<div class="heading">
+				Zipcode 1 <br /><input type="text" id="zipcode1"></div>
+		</div>
+
+		<div class="entry">
+			<div class="heading">
+				Zipcode 2 <br /><input type="text" id="zipcode2"></div>
+			</div>
+
+		<div class="entry">
+			<div class="heading">
+				Zipcode 3 <br /><input type="text" id="zipcode3"></div>
+			</div>
+
+		<div class="interests_entry" id="interests">
+			<div class="heading">
+				Select Your Interests:
+				</div>
+
+				<div>
+					<input type="checkbox" name="topic" value="Schools-filter">
+					<label>Schools</label><br />
+					<input type="checkbox" name="topic" value="Environment-filter">
+					<label>Environment</label><br />
+					<input type="checkbox" name="topic" value="Politics-filter">
+					<label>Politics</label><br />
+					<input type="checkbox" name="topic" value="Arts-filter">
+					<label>Arts</label><br />
+					<input type="checkbox" name="topic" value="Sports-filter">
+					<label>Sports</label><br />
+					<input type="checkbox" name="topic" value="Other-filter">
+					<label>Other</label><br />
+				</div><br>
+		</div>
+
+		<div id="message" class="entry">
+			<div class="heading">
+				Tell Us About Yourself (optional): 
+			</div> 
+			<textarea id="messageBox"></textarea>
+		</div>
+
+		<div id="submit">
+			<button onclick="submitForm()"> Save </button>
+		</div>
+
+	</div>
+
+	<script src="createAccount.js"></script>
+
+</body>
+</html>
