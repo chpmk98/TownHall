@@ -16,7 +16,6 @@ input[type=text], input[type=password] {
 .individualCheckboxSpacing {
 	padding: 15px;
 	width: 16.66%;
-	position: relative;
 	float: left;
 	margin-bottom: 22px;
 }
@@ -65,7 +64,7 @@ button:hover {
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
 	float: left;
-	width: 50%;
+	width: 25%;
 	font-weight: bolder;
 }
 
