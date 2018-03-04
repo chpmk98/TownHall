@@ -1,20 +1,22 @@
 function login(){
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  if ( username == "mayor" && password == "Iamtheboss"){
+  if ( username == "mayor"){
     dummySuccess();
   }
+  if ( username == "" || password == ""){}
+  /*successLogin() here*/
   else {
     failLogin();
   }
 }
 
 function dummySuccess(){
-  location = "dummyProfile.html";
+  location.href = "dummyProfile.html";
 }
 
 function successLogin(){
-
+  /*this will be filled in when we figure out how */
 }
 
 function failLogin(){
