@@ -145,6 +145,80 @@ li {
   width: 80%;
 }
 
+/* Elements of the filer panel */
+.filterTitle {
+  font-size: 125%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.filtersBox {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.filtersBoxes {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 35%;
+  float: left;
+}
+
+.material-icons.forum20 {
+  position: relative;
+  top: 4px;
+  font-size: 20px;
+}
+
+#setFilterButtons {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 3px;
+  left: -6%;
+  width: 100%;
+  height: 50px;
+
+  font-size: 110%;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+#setFilterButtons li {
+  position: relative;
+  left: 30px;
+  padding-top: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 3%;
+  margin-right: 6%;
+
+  display: block;
+  border-radius: 2px;
+
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+#startFilter {
+  background-color: #CCE3EF;
+}
+#startFilter:hover {
+  background-color: #A9C0CC;
+}
+
+#resetFilter {
+  background-color: #F2F2F2;
+}
+#resetFilter:hover {
+  background-color: #E9E9E9;
+}
+
 /* Elements of the posts panel */
 #pageTitle {
   font-family: cursive;
@@ -235,35 +309,6 @@ li {
   padding-left: 1%;
   height: 70%;
   overflow: hidden;
-}
-
-/* Elements of the filer panel */
-.filterTitle {
-  font-size: 125%;
-  margin-left: 5%;
-  margin-top: 5%;
-}
-
-.filtersBox {
-  position: relative;
-  margin-left: 10%;
-  margin-top: 2%;
-  margin-bottom: 5%;
-}
-
-.filtersBoxes {
-  position: relative;
-  margin-left: 10%;
-  margin-top: 2%;
-  margin-bottom: 5%;
-  width: 35%;
-  float: left;
-}
-
-.material-icons.forum20 {
-  position: relative;
-  top: 4px;
-  font-size: 20px;
 }
 
 /* Colors and classes for topics
