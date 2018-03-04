@@ -1,40 +1,26 @@
-
-
-* {
+﻿* {
 	box-sizing: border-box
 }
 /* Full-width input fields */
 input[type=text], input[type=password] {
 	width: 100%;
-	padding: 15px;
+	padding: 20px;
 	margin: 5px 0 22px 0;
 	display: inline-block;
 	border: none;
-	background: #f1f1f1;
+	background: #F2F2F2;
 }
 
-/* Checkbox input spacing*/
-input[type=checkbox] {
-	padding: 15px;
-	margin: 5px 0 10px 0;
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #E9E9E9;
+	outline: none;
 }
-
-/* checkbox section spacing */
-.wrapper {
-	width: 100%;
-	margin: 5px 0 22px 0;
-}
-
-	/* Add a background color when the inputs get focus */
-	input[type=text]:focus, input[type=password]:focus {
-		background-color: #ddd;
-		outline: none;
-	}
 
 /* Set a style for all buttons */
 button {
-	background-color: #4CAF50;
-	color: white;
+	background-color: #CCE3EF;
+	color: black;
 	padding: 14px 20px;
 	margin: 8px 0;
 	border: none;
@@ -45,22 +31,29 @@ button {
 
 	button:hover {
 		opacity: 1;
+		background-color: #A9C0CC;
 	}
 
-/* Extra styles for the cancel button */
-.cancelbtn {
+/* Extra styles for the forgot password button */
+.forgotpwbtn {
 	padding: 14px 20px;
-	background-color: #f44336;
+	background-color: #ACACAC;
 }
 
+	.forgotpwbtn:hover {
+		background-color: #898989;
+		opacity: 1;
+	}
+
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.forgotpwbtn, .signupbtn {
 	float: left;
 	width: 50%;
+	font-weight: bolder;
 }
 
 /* Add padding to container elements */
-.container {
+.signInContainer {
 	padding: 16px;
 }
 
@@ -92,21 +85,6 @@ hr {
 	margin-bottom: 25px;
 }
 
-/* The Close Button (x) */
-.close {
-	position: absolute;
-	right: 35px;
-	top: 15px;
-	font-size: 40px;
-	font-weight: bold;
-	color: #f1f1f1;
-}
-
-	.close:hover,
-	.close:focus {
-		color: #f44336;
-		cursor: pointer;
-	}
 
 /* Clear floats */
 .clearfix::after {
@@ -117,16 +95,13 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-	.cancelbtn, .signupbtn {
+	.forgotpwbtn, .signupbtn {
 		width: 100%;
 	}
 }
 
-/* Zipcode directions formatting */
-.zipcodeDirections {
-	font-weight: bolder;
-	font-size: 16px;
-	position: relative;
-	margin-bottom: 5px;
+/*Formatting for "Forgot Password?" prompt*/
+.forgotPassword {
+	font-size: 12px;
+	color: #405763;
 }
-

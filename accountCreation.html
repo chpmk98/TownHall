@@ -1,0 +1,119 @@
+﻿<html>
+<head>
+	<title>Create a New Account</title>
+	<link rel="stylesheet" type="text/css" href="accountCreation.css" />
+	<link rel="stylesheet" type="text/css" href="universal.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+</head>
+
+<body>
+<ul class="head-bar">
+  	<li id="websiteName"><a href="homePage.html">TownHall</a></li>
+  	<li id="myInterests"><a href="myInterests.html">My Interests</a></li>
+  	<li id="savedPosts"><a href="savedPosts.html">Saved Posts</a></li>
+  	<li id="TtYCO"><a href="talkToYourOfficials.html">Talk to Your City Officials</a></li>
+  	<li id="signIn"><a href="signIn.html">Sign In</a></li>
+  </ul>
+
+	<!-- Button to open the modal -->
+	<!--<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>-->
+
+	<!-- The Modal (contains the Sign Up form) -->
+	<!--<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>-->
+		<form class="modal-content">
+			<div class="createProfileContainer">
+				<h1>Create a New Account</h1>
+				
+				<hr>
+				<label for="email"><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
+
+				<label for="psw-repeat"><b>Repeat Password</b></label>
+				<input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+
+				<div class="zipcodeDirections">
+					Enter at least one but up to three zipcodes for cities you want to receive news about:
+				</div> 
+
+				<label for="zipcode1"><b>Zipcode 1</b></label>
+				<input type="text" placeholder="Enter First Zipcode" name="zipcode1" required>
+
+				<label for="zipcode2"><b>Zipcode 2</b></label>
+				<input type="text" placeholder="Enter Second Zipcode" name="zipcode2">
+
+				<label for="zipcode3"><b>Zipcode 3</b></label>
+				<input type="text" placeholder="Enter Third Zipcode" name="zipcode3">
+
+				<div class="wrapper">
+					<div class="interestsDirections">Select Your Interests:</div>
+
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="newsCheck">
+								News
+							<input type="checkbox">
+							<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="sportsCheck">
+								Sports
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="lifeCheck">
+								Life
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="moneyCheck">
+								Money
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="techCheck">
+								Tech
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="otherCheck">
+								Other
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<label for="bio"><b>Tell Us About Yourself (optional):</b></label>
+					<input type="text" placeholder="Bio Info" name="bio">
+
+					<!--<label>
+						<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+					</label>-->
+
+					<div class="clearfix">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<button type="submit" class="signupbtn">Sign Up</button>
+					</div>
+				</div>
+		</form>
+	<!--</div>-->
+<div class="butt-bar"></div>
+</body>
+</html>
