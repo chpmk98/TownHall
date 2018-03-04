@@ -1,0 +1,99 @@
+
+ul {
+  margin: 50px;
+  margin-top: 0px;
+  margin-left: 10%;
+  padding-left: 0px;
+  height: 30%;
+  width: 20%;
+  list-style-type: none;
+}
+
+#profileTitle {
+  font-size: 350%;
+  margin: 2%;
+  margin-left: 4%;
+}
+
+#inbox {
+  border: solid black 1px;
+  width: 5%;
+  height: 3%;
+  margin-top: 18%;
+  margin-left: -12%;
+
+}
+
+#profilePic {
+  height: 32%;
+  width: 17%;
+  float: left;
+  border: solid black 3px;
+  margin-left: 4%;
+  margin-top: -1%;
+}
+
+#profilePanel {
+  margin-top: 2%;
+  position: sticky;
+  width: 18%;
+  left: 4%;
+  background-color: #CCE3EF;
+}
+
+#biography {
+  border-top: dashed #405763 1px;
+  border-bottom: dashed #405763 1px;
+  margin-left: -12%;
+  padding-left: 3px;
+}
+#profileName {
+  font-size: 110%;
+  font-weight: bold;
+}
+#profileInfo {
+  font-size: 155%;
+  padding-top: 10%;
+  margin-left: 12%;
+  word-wrap: break-word;
+}
+
+#contactInfo {
+  font-size: 80%;
+  margin-top: 10%;
+  word-wrap: break-word;
+  height: 30%;
+  width: 140%;
+  list-style-type: none;
+}
+
+.contactOption{
+  font-size: 80%;
+  margin-top: 10%;
+  width: 300%;
+  word-wrap: break-word;
+}
+
+#profileInterests {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+#activityTitle {
+  font-size: 200%;
+  font-weight: bold;
+  margin-left: 62%;
+  margin-bottom: 1%
+}
+
+#profileActivity{
+  float: right;
+  margin-left: 20%;
+  margin-right: -10%;
+  margin-top: -71%;
+}
+
+.aPost {
+  margin-right: 0px;
+
+}
