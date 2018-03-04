@@ -10,7 +10,7 @@ function login(){
 }
 
 function dummySuccess(){
-  location = "dummyProfile.html"
+  location = "dummyProfile.html";
 }
 
 function successLogin(){
@@ -18,5 +18,5 @@ function successLogin(){
 }
 
 function failLogin(){
-  alert("Incorrect Username or Password")
+  alert("Incorrect Username or Password");
 }
