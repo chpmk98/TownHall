@@ -20,7 +20,7 @@ document.getElementById("dismissPrompt").onclick = function(){
 
 document.getElementById("startFilter").onclick = function(){
 	hideAllPosts();
-	
+	for(var i = 0; )
 }
 
 // Takes a cookie label and returns the value stored in the cookie
