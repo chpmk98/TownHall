@@ -2,69 +2,448 @@
 	Global Classes
 					*/
 body {
-  background-repeat: no-repeat;
-  font-family: Trebuchet, sans-serif;
+  margin: 0px;
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: #e9e9e9;
-  margin: 0px;
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
 }
 
+/* Basic property of any horizontal menu */
+li {
+  float: left;
+  transition: background-color .4s ease;
+}
+
+/* Headbar fonts, positioning, color, etc */
 .head-bar {
-  width: 100%;
-  height: 100px;
-  background-color: #405763;
   position: relative;
+  margin: 0;
+  padding: 0;
   top: -10px;
-  margin: 0px;
+  width: 100%;
+  height: 70px;
+
+  font-size: 110%;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #405763;
 }
 
-.head-bar-button{
-  background-color: #405763;
+.head-bar li a {
+  display: block;
+  padding-top: 27px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 32px;
+
   color: white;
-  display: inline-block;
-  height: 30px;
-  width: 200px;
   text-align: center;
-  position: relative;
-  top: 32px;
+  text-decoration: none;
+}
+
+.head-bar li:hover {
+  background-color: #1D3440;
 }
 
 #websiteName {
   position: relative;
+  top: -17;
   left: 30px;
+  margin-right: 40px;
+
+  font-size: 225%;
+  font-family: cursive;
 }
 
-#myNews {
-  position: relative;
-  left: 20px;
+#signIn {
+  float: right;
+  margin-right: 30px;
 }
 
-#communityForum {
-  position: relative;
-  left: 40px;
-}
-
-#talkToYourCity {
-  position: relative;
-  left: 60px;
-}
-
-#saved {
-  position: relative;
-  left: 60px;
-}
-
-#search {
-  position: relative;
-  width: 50px;
+/* Bottom bar for closure/repetition */
+.butt-bar {
+  width: 100%;
   height: 30px;
-  left: 60px;
-  top: 40px;
+  background-color: #405763;
+  clear: right;
+  bottom: 0px;
 }
 
-#profile {
+/* Banner to create a new profile (fonts, positioning, color, etc)
+   Note: may not be applicable for some pages */
+.signInPrompt {
   position: relative;
-  width: 50px;
-  height: 30px;
-  left: 90px;
-  top: 40px;
+  margin: 0;
+  padding: 0;
+  top: -10px;
+  width: 100%;
+  height: 50px;
+
+  font-size: 110%;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #CCE3EF;
 }
+
+.signInPrompt li {
+  position: relative;
+  left: 30px;
+  padding-top: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 32px;
+
+  display: block;
+
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+.signInPrompt li:hover {
+  background-color: #A9C0CC;
+}
+
+#promptText:hover {
+  background-color: initial;
+}
+
+#createAProfile {
+  margin: 0;
+  padding: 0;
+}
+
+#createAProfile a {
+  display: block;
+  padding-top: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 32px;
+
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Panels for filters and news */
+#filterPanel {
+  position: fixed;
+  top: 30.5%;
+  padding-bottom: 1%;
+  width: 20%;
+  left: 2%;
+  background-color: #F9F9F9;
+  border-radius: 2px;
+}
+
+#postsPanel {
+  position: relative;
+  float: right;
+  margin-bottom: 5%;
+  width: 80%;
+}
+
+/* Elements of the posts panel */
+#pageTitle {
+  font-family: cursive;
+  font-size: 300%;
+  text-align: left;
+  position: relative;
+  clear: left;
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+.aPost {
+  position: relative;
+  float: left;
+  width: 80%;
+  height: 194px;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  border-radius: 2px;
+  background-color: #F2F2F2;
+  transition: background-color .2s ease;
+}
+
+.aPost:hover {
+  background-color: #F9F9F9;
+}
+
+.postBar {
+  position: relative;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  width: 100%;
+  height: 2%;
+  clear: left;
+}
+
+.postIcon {
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 97%;
+  font-size: 200%;
+  margin-top: .5%;
+  margin-left: .6%;
+}
+
+.material-icons.forum130 {
+  position: relative;
+  font-size: 130%;
+  left: -5%;
+  top: -1%;
+}
+
+.postHeadline {
+  margin: .25%;
+  font-size: 150%;
+  padding-left: 1%;
+  overflow: hidden;
+}
+
+.postSave {
+  position: relative;
+  padding: 1%;
+  font-size: 80%;
+  float: right;
+  display: block;
+  background-color: #DCF3FF;
+  border-bottom-left-radius: 4px;
+  transition: background-color .2s ease;
+}
+
+.postSave:hover {
+  background-color: #CCE3EF;
+}
+
+.postSource {
+  margin: .25%;
+  font-size: 75%;
+  padding-left: 1%;
+  color: #869DA9;
+  overflow: hidden;
+}
+
+.postBody {
+  margin: .25%;
+  font-size: 100%;
+  padding-left: 1%;
+  height: 70%;
+  overflow: hidden;
+}
+
+/* Elements of the filer panel */
+.filterTitle {
+  font-size: 125%;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.filtersBox {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.filtersBoxes {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 35%;
+  float: left;
+}
+
+.material-icons.forum20 {
+  position: relative;
+  top: 4px;
+  font-size: 20px;
+}
+
+/* Colors and classes for topics
+   Selected from http://www.december.com/html/spec/colorshadescompact.html */
+/* blue */
+.news {
+  background-color: #3579DC;
+}
+
+/* red */
+.sports {
+  background-color: #E3170D;
+}
+
+/* purple */
+.life {
+  background-color: #7D26CD;
+}
+
+/* green */
+.money {
+  background-color: #A2C93A;
+}
+
+/* orange */
+.tech {
+  background-color: #F87531;
+}
+
+/* gray */
+.other {
+  background-color: #898989;
+}
+
+/* Checkmarks (color, customization, transition, etc)
+   DISCLAIMER: This is not my code. I stole it off of W3Schools.
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #eee; /* a default color */
+  transition: background-color .4s ease;
+}
+
+/* On mouse-over, add a default grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+/* When the checkbox is checked, add a default blue background 
+   that somewhat matches the headbar */
+.container input:checked ~ .checkmark {
+    background-color: #869DA9;
+}
+
+#newsCheck input ~ .checkmark{
+  background-color: #ADC9F1;
+}
+/* On mouse-over, add a light blue background color */
+#newsCheck:hover input ~ .checkmark{
+  background-color: #71A1E6;
+}
+/* When the checkbox is checked, add an blue background */
+#newsCheck input:checked ~ .checkmark{
+  background-color: #3579DC;
+}
+
+#sportsCheck input ~ .checkmark{
+  background-color: #F99E9A;
+}
+#sportsCheck:hover input ~ .checkmark{
+  background-color: #F5554D;
+}
+#sportsCheck input:checked ~ .checkmark{
+  background-color: #E3170D;
+}
+
+#lifeCheck input ~ .checkmark{
+  background-color: #CCA6EE;
+}
+#lifeCheck:hover input ~ .checkmark{
+  background-color: #A462E2;
+}
+#lifeCheck input:checked ~ .checkmark{
+  background-color: #7D26CD;
+}
+
+#moneyCheck input ~ .checkmark{
+  background-color: #DAE9B0;
+}
+#moneyCheck:hover input ~ .checkmark{
+  background-color: #BED975;
+}
+#moneyCheck input:checked ~ .checkmark{
+  background-color: #A2C93A;
+}
+
+#techCheck input ~ .checkmark{
+  background-color: #FCC6AA;
+}
+#techCheck:hover input ~ .checkmark{
+  background-color: #FA9D6D;
+}
+#techCheck input:checked ~ .checkmark{
+  background-color: #F87531;
+}
+
+#otherCheck input ~ .checkmark{
+  background-color: #CFCFCF;
+}
+#otherCheck:hover input ~ .checkmark{
+  background-color: #ACACAC;
+}
+#otherCheck input:checked ~ .checkmark{
+  background-color: #898989;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

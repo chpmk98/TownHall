@@ -1,8 +1,12 @@
 
-#talkToYourCity {
-  position: relative;
-  left: 60px;
-  text-decoration: underline;
+#TtYCO {
+  text-decoration: underline; 
+  color: white;
+}
+
+#bottomSpacer {
+  height: 20%;
+  clear: right;
 }
 
 input[type = "text"] {

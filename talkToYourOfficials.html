@@ -2,72 +2,62 @@
 <head>
   <title>HomePage</title>
   <link rel="stylesheet" type="text/css" href="talkToYourOfficials.css"/>
-  <link rel = "stylesheet" type = "text/css" href = "universal.css"/>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-     rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="universal.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans" rel="stylesheet"> 
 </head>
 
 <body>
+  <ul class="head-bar">
+    <li id="websiteName"><a href="homePage.html">TownHall</a></li>
+    <li id="myInterests"><a href="myInterests.html">My Interests</a></li>
+    <li id="savedPosts"><a href="savedPosts.html">Saved Posts</a></li>
+    <li id="TtYCO"><a href="talkToYourOfficials.html">Talk to Your City Officials</a></li>
+    <li id="signIn"><a href="user-profile.html">Sign In</a></li>
+  </ul>
 
-  <div class = "head-bar">
-    <a href="homePage.html">
-      <div id = "websiteName" class = "head-bar-button"> TownHall</div></a>
-    <div id = "myNews" class = "head-bar-button"> My News</div>
-    <a href="CommunityForum.html">
-      <div id = "communityForum" class = "head-bar-button"> Community Forum</div></a>
-    <a href="talkToYourOfficials.html">
-      <div id = "talkToYourCity" class = "head-bar-button"> Talk To a City Official </div></a>
-    <div id = "saved" class = "head-bar-button"> Saved </div>
-    <div id = "search" class = "head-bar-button" > <i class = "material-icons"> search </i> </div>
-    <a href="user-profile.html">
-      <div id = "profile" class = "head-bar-button"> <i class = "material-icons"> account_circle </i> </div></a>
-</div>
+  <div id="postsPanel">
+    <div id="pageTitle">Talk to Your City Official</div>
 
+    <div id = "talkForm">
+      <div class = "talkLine">
+        First Name <input type = "text" id = "talkFirstName">
+      </div>
 
-  <div id = "talkTitle">
-    Talk to Your City Officials
+      <div class = "talkLine">
+        Last Name <input type = "text" id = "talkLastName">
+      </div>
+
+      <div class = "talkLine">
+        Street Address <input type = "text" id = "talkStreetAddress">
+      </div>
+
+      <div class = "talkLine">
+        Topic
+        <select id = "talkTopic">
+          <option value = "default"> -- select an option -- </option>
+          <option value="Infrastructure">Infrastructure</option>
+          <option value="Zoning">Zoning</option>
+          <option value="City Services">City Services</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class = "talkLine">
+        Subject <input type="text" id = "talkSubject">
+      </div>
+
+      <div id = "talkMessage" class = "talkLine">
+        Message <textarea id="talkMessageBox"></textarea>
+      </div>
+
+      <div id = "talkSubmit">
+          <button onclick = "submitForm()"> Submit </button>
+      </div>
+    </div>
   </div>
-
-  <div id = "talkForm">
-    <div class = "talkLine">
-      First Name <input type = "text" id = "talkFirstName">
-    </div>
-
-    <div class = "talkLine">
-      Last Name <input type = "text" id = "talkLastName">
-    </div>
-
-    <div class = "talkLine">
-      Street Address <input type = "text" id = "talkStreetAddress">
-    </div>
-
-    <div class = "talkLine">
-      Topic
-      <select id = "talkTopic">
-        <option value = "default"> -- select an option -- </option>
-        <option value="Infrastructure">Infrastructure</option>
-        <option value="Zoning">Zoning</option>
-        <option value="City Services">City Services</option>
-        <option value="Other">Other</option>
-      </select>
-    </div>
-
-    <div class = "talkLine">
-      Subject <input type="text" id = "talkSubject">
-    </div>
-
-    <div id = "talkMessage" class = "talkLine">
-      Message <textarea id="talkMessageBox"></textarea>
-    </div>
-
-    <div id = "talkSubmit">
-        <button onclick = "submitForm()"> Submit </button>
-    </div>
-
-  </div>
-
-
-
+  <div id="bottomSpacer"></div>
+<div class="butt-bar"></div>
 <script src="talkToYourOfficials.js"></script>
 </body>
 

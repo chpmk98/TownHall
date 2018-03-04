@@ -2,91 +2,108 @@
 <head>
   <title>HomePage</title>
   <link rel="stylesheet" type="text/css" href="homePage.css"/>
+
+<!-- This stuff is for the headbar-->
   <link rel="stylesheet" type="text/css" href="universal.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <!-- This is the icons for news and forum in particular -->
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!-- End icons for news and forum -->
 </head>
 
 <body>
-  <div class = "head-bar">
-      <a href="homePage.html">
-        <div id = "websiteName" class = "head-bar-button"> TownHall</div></a>
-      <div id = "myNews" class = "head-bar-button"> My News</div>
-      <a href="CommunityForum.html">
-        <div id = "communityForum" class = "head-bar-button"> Community Forum</div></a>
-      <a href = "talkToYourOfficials.html" >
-        <div id = "talkToYourCity" class = "head-bar-button"> Talk To a City Official </div>
-      </a>
-      <div id = "saved" class = "head-bar-button"> Saved </div>
-      <div id = "search" class = "head-bar-button" > <i class = "material-icons"> search </i> </div>
-      <a href="user-profile.html">
-        <div id = "profile" class = "head-bar-button"> <i class = "material-icons"> account_circle </i> </div>
-      </a>
+  <ul class="head-bar">
+  	<li id="websiteName"><a href="homePage.html">TownHall</a></li>
+  	<li id="myInterests"><a href="myInterests.html">My Interests</a></li>
+  	<li id="savedPosts"><a href="savedPosts.html">Saved Posts</a></li>
+  	<li id="TtYCO"><a href="talkToYourOfficials.html">Talk to Your City Officials</a></li>
+  	<li id="signIn"><a href="user-profile.html">Sign In</a></li>
+  </ul>
+
+  <ul class="signInPrompt">
+  	<li id="promptText">Create a profile to save your interests:</li>
+  	<li id="createAProfile"><a href="user-profile.html">Create a Profile!</a></li>
+  	<li id="dismissPrompt">X Dismiss</li>
+  </ul>
+<!-- This is the end of the headbar -->
+
+<!-- This is stuff for the filter panel -->
+  <div id="filterPanel">
+  	<div class="filterTitle">Filter Posts by Interest:</div>
+  	<div class="filtersBoxes">
+  	  <label class="container" id="newsCheck">News
+      	<input type="checkbox">
+      	<span class="checkmark"></span>
+      </label>
+	  <label class="container" id="sportsCheck">Sports
+  	  	<input type="checkbox">
+  	  	<span class="checkmark"></span>
+	  </label>
+	  <label class="container" id="lifeCheck">Life
+  	  	<input type="checkbox">
+  	  	<span class="checkmark"></span>
+	  </label>
+	</div>
+	<div class="filtersBoxes">
+	  <label class="container" id="moneyCheck">Money
+  	    <input type="checkbox">
+  	    <span class="checkmark"></span>
+	  </label>
+	  <label class="container" id="techCheck">Tech
+  	    <input type="checkbox">
+  	    <span class="checkmark"></span>
+	  </label>
+	  <label class="container" id="otherCheck">Other
+  	    <input type="checkbox">
+  	    <span class="checkmark"></span>
+	  </label>
+	</div>
+
+	<div class="filterTitle">Filter Posts by Type:</div>
+	<div class="filtersBox">
+  	  <label class="container"><i class="fa">&#xf1ea;</i> News Articles
+      	<input type="checkbox">
+      	<span class="checkmark"></span>
+      </label>
+	  <label class="container"><i class="material-icons forum20">forum</i>Discussions
+  	  	<input type="checkbox">
+  	  	<span class="checkmark"></span>
+	  </label>
+	</div>
   </div>
+<!-- This is the end of the filter panel -->
 
-  <div id = "homepageCityInfo">
-    <div id = "homepageCityName"> Evanston, Illinois </div>
-    <div id = "population"> Population: 5 </div>
-    <div class = "homepageFunFacts" >
-      <div id = "homepageFunFacts1"> Mayor:Bob  Alderman:Joe  Other Stuff Lorem Ipsum Must
-      </div>
-      <div id = "homepageFunFacts2"> Hi hello Helpful Info wooooo </div>
-      <div id = "homepageFunFacts3"> extra stuff for kicks </div>
-      <div id = "homepageFunFacts4"> one more line extra extra. For real. </div>
-    </div>
+<!-- This is stuff for the posts panel -->
+  <div id="postsPanel">
+    <div id = "pageTitle"> Top Stories and Discussions </div>
+  	
+  	<!-- These are posts -->
+  	<div class="aPost">
+  	  <div class="news postBar"></div>
+  	  <div class="postIcon">
+  	  	<i class="fa">&#xf1ea;</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Headline</div>
+  	  <div class="postSource">sourced from The Chicago Tribune</div>
+  	  <div class="postBody">This is the body of the post. Here is some text</div>
+  	</div>
+  	
+  	<div class="aPost">
+  	  <div class="life postBar"></div>
+  	  <div class="postIcon">
+  		<i class="material-icons forum130">forum</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Headline</div>
+  	  <div class="postSource">posted by Alvin Tan</div>
+  	  <div class="postBody">This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text000000000... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too muchoooooooooo text... Will it automatically end or will it just run out of the container? </div>
+  	</div>
+  	<!-- This is the end of posts -->
   </div>
-
-  <div id = "homepageTitle"> Top Stories and Discussions </div>
-  <div id = "homepageSaveForLater"> Save For Later </div>
-
-  <div class = homepageBlockOne>
-    <div id = "saveBoxOne" class = "saveBoxes"><input type="checkbox"></div>
-    <div class = "newsOrDiscussion"> </div>
-    <div class = "themes"> </div>
-    <div id = "storyOne" class = "stories">
-      <p1 class = "headline" > Headline </p1>
-      <p2 class = "storyText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra
-        tortor at massa pretium accumsan. Quisque dapibus a dui ut iaculis.
-        Integer iaculis, lorem in tincidunt ullamcorper, lectus massa hendrerit
-        maximus dictum. Donec vel auctor felis. Aenean venenatis sagittis ultrices.
-        Donec at feugiat felis. Nunc in metus ultrices, malesuada tellus eget,
-        venenatis urna. Vestibulum bibendum viverra metus vel ornare. In suscipit
-        sem at velit elementum, sed luctus enim condimentum </p2>
-      </div>
-    </div>
-
-  <div class = homepageBlockTwo>
-    <div id = "saveBoxTwo" class = "saveBoxes"><input type="checkbox"></div>
-    <div class = "newsOrDiscussion"> </div>
-    <div class = "themes"> </div>
-    <div id = "storyTwo" class = "stories">
-      <p1 class = "headline"> Headline </p1>
-      <p2 class = "storyText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra
-        tortor at massa pretium accumsan. Quisque dapibus a dui ut iaculis.
-        Integer iaculis, lorem in tincidunt ullamcorper, lectus massa hendrerit
-        maximus dictum. Donec vel auctor felis. Aenean venenatis sagittis ultrices.
-        Donec at feugiat felis. Nunc in metus ultrices, malesuada tellus eget,
-        venenatis urna. Vestibulum bibendum viverra metus vel ornare. In suscipit
-        sem at velit elementum, sed luctus enim condimentum</p2>
-      </div>
-    </div>
-
-  <div class = homepageBlockThree>
-    <div id = "saveBoxThree" class = "saveBoxes"><input type="checkbox"></div>
-    <div class = "newsOrDiscussion"> </div>
-    <div class = "themes"> </div>
-    <div id = "storyThree" class = "stories">
-      <p1 class = "headline"> Headline Plah Blah </p1>
-      <p2 class = "storyText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra
-        tortor at massa pretium accumsan. Quisque dapibus a dui ut iaculis.
-        Integer iaculis, lorem in tincidunt ullamcorper, lectus massa hendrerit
-        maximus dictum. Donec vel auctor felis. Aenean venenatis sagittis ultrices.
-        Donec at feugiat felis. Nunc in metus ultrices, malesuada tellus eget,
-        venenatis urna. Vestibulum bibendum viverra metus vel ornare. In suscipit
-        sem at velit elementum, sed luctus enim condimentum </p2>
-      </div>
-    </div>
-
-
+<!-- This is the end of the posts panel -->
+<div class="butt-bar"></div>
+</body>
 
 </html>

@@ -58,9 +58,11 @@
   border-radius: 4px;
 }
 .Schools-filter{
-	border-style: solid;
+/*	border-style: solid;
 	border-width:thick;
-	border-color: #6E06AA;
+  border-color: #6E06AA;*/
+  background-color: #6E06AA;
+  color: white;
 }
 
 .Environment-filter{
