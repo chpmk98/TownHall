@@ -2,17 +2,19 @@
 <head>
 	<title>Create a New Account</title>
 	<link rel="stylesheet" type="text/css" href="createAccount.css" />
+	<link rel="stylesheet" type="text/css" href="universal.css" />
+
 </head>
 
 <body>
 	<!-- Button to open the modal -->
-	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+	<!--<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>-->
 
 	<!-- The Modal (contains the Sign Up form) -->
-	<div id="id01" class="modal">
-		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-		<form class="modal-content" action="/action_page.php">
-			<div class="container">
+	<!--<div id="id01" class="modal">
+		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>-->
+		<form class="modal-content">
+			<div class="createProfileContainer">
 				<h1>Create a New Account</h1>
 				
 				<hr>
@@ -37,76 +39,73 @@
 
 				<label for="zipcode3"><b>Zipcode 3</b></label>
 				<input type="text" placeholder="Enter Third Zipcode" name="zipcode3">
-				
-				<!--<div class="wrapper">
-					<label for="interests"><b>Select Your Interests:</b></label><br />
-					<input type="checkbox" name="topic" value="Schools-filter">
-					<span class="checkmark"></span>
-
-					<label>Schools</label><br />
-					<input type="checkbox" name="topic" value="Environment-filter">
-					<span class="checkmark"></span>
-
-					<label>Environment</label><br />
-					<input type="checkbox" name="topic" value="Politics-filter">
-					<label>Politics</label><br />
-					<input type="checkbox" name="topic" value="Arts-filter">
-					<label>Arts</label><br />
-					<input type="checkbox" name="topic" value="Sports-filter">
-					<label>Sports</label><br />
-					<input type="checkbox" name="topic" value="Other-filter">
-					<label>Other</label><br />
-				</div>-->
 
 				<div class="wrapper">
-					<label class="container" id="newsCheck">
-						News
-						<input type="checkbox">
-						<span class="checkmark"></span>
-					</label>
-					<label class="container" id="sportsCheck">
-						Sports
-						<input type="checkbox">
-						<span class="checkmark"></span>
-					</label>
-					<label class="container" id="lifeCheck">
-						Life
-						<input type="checkbox">
-						<span class="checkmark"></span>
-					</label>
-				</div>
-				<div class="filtersBoxes">
-					<label class="container" id="moneyCheck">
-						Money
-						<input type="checkbox">
-						<span class="checkmark"></span>
-					</label>
-					<label class="container" id="techCheck">
-						Tech
-						<input type="checkbox">
-						<span class="checkmark"></span>
-					</label>
-					<label class="container" id="otherCheck">
-						Other
-						<input type="checkbox">
-						<span class="checkmark"></span>
-					</label>
-				</div>
+					<div class="interestsDirections">Select Your Interests:</div>
 
-				<label for="message"><b>Tell Us About Yourself (optional):</b></label>
-				<input type="text" name="bio">
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="newsCheck">
+								News
+							<input type="checkbox">
+							<span class="checkmark"></span>
+							</label>
+						</div>
 
-				<label>
-					<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-				</label>
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="sportsCheck">
+								Sports
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
 
-				<div class="clearfix">
-					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-					<button type="submit" class="signupbtn">Sign Up</button>
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="lifeCheck">
+								Life
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="moneyCheck">
+								Money
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="techCheck">
+								Tech
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="individualCheckboxSpacing">
+							<label class="container" id="otherCheck">
+								Other
+								<input type="checkbox">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+
+					<label for="bio"><b>Tell Us About Yourself (optional):</b></label>
+					<input type="text" placeholder="Bio Info" name="bio">
+
+					<!--<label>
+						<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+					</label>-->
+
+					<div class="clearfix">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<button type="submit" class="signupbtn">Sign Up</button>
+					</div>
 				</div>
-			</div>
 		</form>
-	</div>
+	<!--</div>-->
 
 </body>
 </html>

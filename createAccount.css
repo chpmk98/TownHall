@@ -1,23 +1,26 @@
-
-
+﻿
 * {
 	box-sizing: border-box
 }
 /* Full-width input fields */
 input[type=text], input[type=password] {
 	width: 100%;
-	padding: 15px;
+	padding: 20px;
 	margin: 5px 0 22px 0;
 	display: inline-block;
 	border: none;
-	background: #f1f1f1;
+	background: #F2F2F2;
 }
 
-/* Checkbox input spacing*/
-input[type=checkbox] {
+/* Checkbox input spacing */
+.individualCheckboxSpacing {
 	padding: 15px;
-	margin: 5px 0 10px 0;
+	width: 16.66%;
+	position: relative;
+	float: left;
+	margin-bottom: 22px;
 }
+
 
 /* checkbox section spacing */
 .wrapper {
@@ -27,14 +30,14 @@ input[type=checkbox] {
 
 	/* Add a background color when the inputs get focus */
 	input[type=text]:focus, input[type=password]:focus {
-		background-color: #ddd;
+		background-color: #E9E9E9;
 		outline: none;
 	}
 
 /* Set a style for all buttons */
 button {
-	background-color: #4CAF50;
-	color: white;
+	background-color: #CCE3EF;
+	color: black;
 	padding: 14px 20px;
 	margin: 8px 0;
 	border: none;
@@ -43,24 +46,31 @@ button {
 	opacity: 0.9;
 }
 
-	button:hover {
+button:hover {
 		opacity: 1;
-	}
+		background-color: #A9C0CC;
+}
 
 /* Extra styles for the cancel button */
 .cancelbtn {
 	padding: 14px 20px;
-	background-color: #f44336;
+	background-color: #ACACAC;
+}
+
+.cancelbtn:hover {
+  background-color: #898989;
+  opacity: 1;
 }
 
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
 	float: left;
 	width: 50%;
+	font-weight: bolder;
 }
 
 /* Add padding to container elements */
-.container {
+.createProfileContainer {
 	padding: 16px;
 }
 
@@ -122,11 +132,18 @@ hr {
 	}
 }
 
-/* Zipcode directions formatting */
+/* Zipcode and Select Interests directions formatting */
 .zipcodeDirections {
 	font-weight: bolder;
 	font-size: 16px;
 	position: relative;
-	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-bottom: 22px;
 }
 
+.interestsDirections {
+	font-weight: bolder;
+	font-size: 16px;
+	position: relative;
+	margin-top: 5px;
+}
