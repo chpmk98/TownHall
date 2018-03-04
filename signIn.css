@@ -48,7 +48,7 @@ button {
 /* Float cancel and signup buttons and add an equal width */
 .forgotpwbtn, .signupbtn {
 	float: left;
-	width: 50%;
+	width: 25%;
 	font-weight: bolder;
 }
 
@@ -104,4 +104,5 @@ hr {
 .forgotPassword {
 	font-size: 12px;
 	color: #405763;
+	margin-bottom: 20px;
 }
