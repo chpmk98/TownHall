@@ -57,6 +57,10 @@ li {
   font-family: cursive;
 }
 
+#TtYCO {
+  float: right;
+}
+
 #signIn {
   float: right;
   margin-right: 30px;
