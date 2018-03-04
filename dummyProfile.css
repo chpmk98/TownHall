@@ -20,8 +20,15 @@ ul {
   width: 5%;
   height: 3%;
   margin-top: 18%;
-  margin-left: -12%;
+  margin-left: -17%;
+}
 
+#profileEdit {
+  margin-left: 6%;
+}
+
+#twoButtons {
+  display: inline;
 }
 
 #profilePic {
