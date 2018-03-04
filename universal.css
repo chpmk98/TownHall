@@ -1,5 +1,7 @@
 /*
 	Global Classes
+
+  Contains: head-bar, butt-bar
 					*/
 body {
   margin: 0px;
@@ -54,7 +56,7 @@ li {
   margin-right: 40px;
 
   font-size: 225%;
-  font-family: cursive;
+  font-family: Monotype Corsiva, cursive;
 }
 
 #TtYCO {
@@ -134,7 +136,7 @@ li {
 /* Panels for filters and news */
 #filterPanel {
   position: fixed;
-  top: 30.5%;
+  top: 28.5%;
   padding-bottom: 1%;
   width: 20%;
   left: 2%;
@@ -225,7 +227,7 @@ li {
 
 /* Elements of the posts panel */
 #pageTitle {
-  font-family: cursive;
+  font-family: Monotype Corsiva, cursive;
   font-size: 300%;
   text-align: left;
   position: relative;
