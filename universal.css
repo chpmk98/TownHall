@@ -253,6 +253,11 @@ li {
   background-color: #F9F9F9;
 }
 
+.aPost a {
+  color: initial;
+  text-decoration: none;
+}
+
 .postBar {
   position: relative;
   border-top-left-radius: 2px;
@@ -295,7 +300,6 @@ li {
   background-color: #DCF3FF;
   border-bottom-left-radius: 4px;
   transition: background-color .2s ease;
-  a[href]: none;
 }
 
 .postSave:hover {
