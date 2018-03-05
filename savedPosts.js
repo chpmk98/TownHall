@@ -1,13 +1,35 @@
 
+// These values are here in case we want to change them later
+var savedButtText = "Saved"
+var notSavedButtText = "Save for Later"
 var cookieMinutes = 5;
+
+// These are handy arrays I use in multiple functions
 var allPosts = document.getElementsByClassName("aPost");
 var filterChecks = document.getElementsByClassName("container");
+var saveButts = document.getElementsByClassName("postSave");
+// Note: Cookies for the save status of each post are called "savedPCi",
+// where i is the index of the post in the list
 
 // This function runs immediately upon opening the page
 (function() {
 	// This if statement hides the banner if it has already been closed
 	if(getCookie("savedPostsPrompt") === "dismissed") {
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
+	}
+
+	for(var i = 0; i < saveButts.length; i++) {
+		// Adds clicking functionality to each save button
+		saveButts[i].addEventListener("click", clickSaveButton);
+
+		// Adjusts the label to "Saved" if the post is already saved
+		// If the post is not saved, hide the post
+		if(getCookie("savedPC"+i) === savedButtText) {
+			saveButts[i].innerHTML = savedButtText;
+		} else {
+			saveButts[i].innerHTML = notSavedButtText;
+			allPosts[i].style.display = "none";
+		}
 	}
 }) ();
 
@@ -20,6 +42,27 @@ document.getElementById("dismissPrompt").onclick = function() {
 	document.cookie = "savedPostsPrompt=dismissed; expires="+time.toUTCString();
 }
 
+// Called when a save button is clicked. Changes the innerHTML of the button
+// and updates the saved cookies.
+function clickSaveButton() {
+	if(this.innerHTML === savedButtText) {
+		this.innerHTML = notSavedButtText;
+	} else {
+		this.innerHTML = savedButtText;
+	}
+
+	updateAllSavedPCs();
+}
+
+// Updates all the cookies of savedPCs, since I am having trouble getting
+// them to update on an individual basis
+function updateAllSavedPCs() {
+	for(var i = 0; i < saveButts.length; i++) {
+		console.log("savedPC"+i+"="+saveButts[i].innerHTML)
+		document.cookie = "savedPC"+i+"="+saveButts[i].innerHTML;
+	}
+}
+
 // Shows all the posts and unchecks all the filter check boxes
 document.getElementById("resetFilter").onclick = function() {
 	showAllPosts();
@@ -27,7 +70,6 @@ document.getElementById("resetFilter").onclick = function() {
 		filterChecks[i].getElementsByTagName("input")[0].checked = false;
 	}
 }
-
 
 // Shows only posts that are in the checked topics/types
 // If there is no type selected, there is no filtering

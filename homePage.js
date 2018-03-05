@@ -1,5 +1,10 @@
 
+// These values are here in case we want to change them later
+var savedButtText = "Saved"
+var notSavedButtText = "Save for Later"
 var cookieMinutes = 5;
+
+// These are handy arrays I use in multiple functions
 var allPosts = document.getElementsByClassName("aPost");
 var filterChecks = document.getElementsByClassName("container");
 var saveButts = document.getElementsByClassName("postSave");
@@ -19,8 +24,8 @@ var saveButts = document.getElementsByClassName("postSave");
 		saveButts[i].addEventListener("click", clickSaveButton);
 
 		// Adjusts the label to "Saved" if the post is already saved
-		if(getCookie("savedPC"+i) === "Saved") {
-			saveButts[i].innerHTML = "Saved";
+		if(getCookie("savedPC"+i) === savedButtText) {
+			saveButts[i].innerHTML = savedButtText;
 		}
 	}
 }) ();
@@ -38,10 +43,10 @@ document.getElementById("dismissPrompt").onclick = function() {
 // and updates the saved cookies.
 function clickSaveButton() {
 	console.log("clicked a button! innerHTML is " + this.innerHTML);
-	if(this.innerHTML === "Saved") {
-		this.innerHTML = "Save for Later";
+	if(this.innerHTML === savedButtText) {
+		this.innerHTML = notSavedButtText;
 	} else {
-		this.innerHTML = "Saved";
+		this.innerHTML = savedButtText;
 	}
 
 	updateAllSavedPCs();
