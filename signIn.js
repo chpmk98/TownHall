@@ -1,7 +1,7 @@
 function login(){
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  if ( username == "mayor"){
+  if ( username == "mayor" && password=="evanston"){
     dummySuccess();
   }
   if ( username == "" || password == ""){}
