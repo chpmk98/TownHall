@@ -146,7 +146,7 @@ li {
   float: right;
   margin-bottom: 5%;
   width: 80%;
-  min-height: 475px;
+  min-height: 500px;
   /*min-height: 67.5%; for some reason this won't work*/
 }
 
