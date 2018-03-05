@@ -2,12 +2,26 @@
 var cookieMinutes = 5;
 var allPosts = document.getElementsByClassName("aPost");
 var filterChecks = document.getElementsByClassName("container");
+var saveButts = document.getElementsByClassName("postSave");
+// Note: Cookies for the save status of each post are called "savedPCi",
+// where i is the index of the post in the list
+
 
 // This function runs immediately upon opening the page
 (function() {
 	// This if statement hides the banner if it has already been closed
 	if(getCookie("homePagePrompt") === "dismissed") {
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
+	}
+
+	for(var i = 0; i < saveButts.length; i++) {
+		// Adds clicking functionality to each save button
+		saveButts[i].addEventListener("click", clickSaveButton);
+
+		// Adjusts the label to "Saved" if the post is already saved
+		if(getCookie("savedPC"+i) === "Saved") {
+			saveButts[i].innerHTML = "Saved";
+		}
 	}
 }) ();
 
@@ -20,6 +34,28 @@ document.getElementById("dismissPrompt").onclick = function() {
 	document.cookie = "homePagePrompt=dismissed; expires="+time.toUTCString();
 }
 
+// Called when a save button is clicked. Changes the innerHTML of the button
+// and updates the saved cookies.
+function clickSaveButton() {
+	console.log("clicked a button! innerHTML is " + this.innerHTML);
+	if(this.innerHTML === "Saved") {
+		this.innerHTML = "Save for Later";
+	} else {
+		this.innerHTML = "Saved";
+	}
+
+	updateAllSavedPCs();
+}
+
+// Updates all the cookies of savedPCs, since I am having trouble getting
+// them to update on an individual basis
+function updateAllSavedPCs() {
+	for(var i = 0; i < saveButts.length; i++) {
+		console.log("savedPC"+i+"="+saveButts[i].innerHTML)
+		document.cookie = "savedPC"+i+"="+saveButts[i].innerHTML;
+	}
+}
+
 // Shows all the posts and unchecks all the filter check boxes
 document.getElementById("resetFilter").onclick = function() {
 	showAllPosts();
@@ -27,7 +63,6 @@ document.getElementById("resetFilter").onclick = function() {
 		filterChecks[i].getElementsByTagName("input")[0].checked = false;
 	}
 }
-
 
 // Shows only posts that are in the checked topics/types
 // If there is no type selected, there is no filtering
