@@ -1,6 +1,6 @@
 
 // These values are here in case we want to change them later
-var savedButtText = "Saved"
+var savedButtText = "Unsave"
 var notSavedButtText = "Save for Later"
 var cookieMinutes = 5;
 
