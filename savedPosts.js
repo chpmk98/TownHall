@@ -2,7 +2,7 @@
 // These values are here in case we want to change them later
 var savedButtText = "Unsave"
 var notSavedButtText = "Save for Later"
-var cookieMinutes = 5;
+var cookieMinutes = 10; // Determines how long the banner stays dismissed
 
 // These are handy arrays I use in multiple functions
 var allPosts = document.getElementsByClassName("aPost");
@@ -42,6 +42,17 @@ document.getElementById("dismissPrompt").onclick = function() {
 	document.cookie = "savedPostsPrompt=dismissed; expires="+time.toUTCString();
 }
 
+// Resets the filter and unsaves all of the posts
+document.getElementById("pageActionButton").onclick = function() {
+	for(var i = 0; i < saveButts.length; i++) {
+		if(!(allPosts[i].style.display === "none")) {
+			saveButts[i].innerHTML = notSavedButtText;
+		}
+	}
+
+	updateAllSavedPCs();
+}
+
 // Called when a save button is clicked. Changes the innerHTML of the button
 // and updates the saved cookies.
 function clickSaveButton() {
@@ -64,7 +75,14 @@ function updateAllSavedPCs() {
 
 // Shows all the posts and unchecks all the filter check boxes
 document.getElementById("resetFilter").onclick = function() {
+	resetAllFilters();
+}
+
+// Created because both "resetFilter" and "pageActionButton" use this function
+function resetAllFilters() {
 	showAllPosts();
+	hideUnsavedPosts();
+
 	for(var i = 0; i < filterChecks.length; i++) {
 		filterChecks[i].getElementsByTagName("input")[0].checked = false;
 	}
@@ -117,6 +135,8 @@ document.getElementById("startFilter").onclick = function() {
 		}
 	}
 	
+	// If the posts are not saved, hide them
+	hideUnsavedPosts();
 }
 
 // Hides all the posts
@@ -130,6 +150,16 @@ function hideAllPosts() {
 function showAllPosts() {
 	for(var i = 0; i < allPosts.length; i++) {
 		allPosts[i].style.display = "initial";
+	}
+}
+
+// Hides all the unsaved posts
+function hideUnsavedPosts() {
+	for(var i = 0; i < saveButts.length; i++) {
+		// If the post is not saved, hide the post
+		if(!(getCookie("savedPC"+i) === savedButtText)) {
+			allPosts[i].style.display = "none";
+		}
 	}
 }
 

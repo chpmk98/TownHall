@@ -2,7 +2,7 @@
 // These values are here in case we want to change them later
 var savedButtText = "Unsave"
 var notSavedButtText = "Save for Later"
-var cookieMinutes = 5;
+var cookieMinutes = 10; // Determines how long the banner stays dismissed
 
 // These are handy arrays I use in multiple functions
 var allPosts = document.getElementsByClassName("aPost");

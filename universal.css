@@ -211,10 +211,10 @@ li {
 }
 
 #startFilter {
-  background-color: #CCE3EF;
+  background-color: #DCF3FF;
 }
 #startFilter:hover {
-  background-color: #A9C0CC;
+  background-color: #CCE3EF;
 }
 
 #resetFilter {
@@ -230,10 +230,28 @@ li {
   font-size: 300%;
   text-align: left;
   position: relative;
-  clear: left;
+  float: left;
+  width: 60%;
   margin-top: 1%;
   margin-left: 5%;
   margin-bottom: 3%;
+}
+
+#pageActionButton {
+  position: relative;
+  float: left;
+  padding: 1%;
+  text-align: center;
+  border-radius: 2px;
+  margin-top: 3%;
+  margin-left: 8%;
+  width: 10%;
+  background-color: #DCF3FF;
+  transition: background-color .2s ease;
+}
+
+#pageActionButton:hover {
+  background-color: #CCE3EF;
 }
 
 .aPost {
