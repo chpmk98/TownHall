@@ -11,10 +11,11 @@ var saveButts = document.getElementsByClassName("postSave");
 // Note: Cookies for the save status of each post are called "savedPCi",
 // where i is the index of the post in the list
 
+
 // This function runs immediately upon opening the page
 (function() {
 	// This if statement hides the banner if it has already been closed
-	if(getCookie("savedPostsPrompt") === "dismissed") {
+	if(getCookie("myInterestsPrompt") === "dismissed") {
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	}
 
@@ -23,12 +24,8 @@ var saveButts = document.getElementsByClassName("postSave");
 		saveButts[i].addEventListener("click", clickSaveButton);
 
 		// Adjusts the label to "Saved" if the post is already saved
-		// If the post is not saved, hide the post
 		if(getCookie("savedPC"+i) === savedButtText) {
 			saveButts[i].innerHTML = savedButtText;
-		} else {
-			saveButts[i].innerHTML = notSavedButtText;
-			allPosts[i].style.display = "none";
 		}
 	}
 }) ();
@@ -39,7 +36,7 @@ document.getElementById("dismissPrompt").onclick = function() {
 	document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	var time = new Date();
 	time.setTime(time.getTime() + (cookieMinutes*60*1000));
-	document.cookie = "savedPostsPrompt=dismissed; expires="+time.toUTCString();
+	document.cookie = "myInterestsPrompt=dismissed; expires="+time.toUTCString();
 }
 
 // Called when a save button is clicked. Changes the innerHTML of the button

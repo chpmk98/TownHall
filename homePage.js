@@ -42,7 +42,6 @@ document.getElementById("dismissPrompt").onclick = function() {
 // Called when a save button is clicked. Changes the innerHTML of the button
 // and updates the saved cookies.
 function clickSaveButton() {
-	console.log("clicked a button! innerHTML is " + this.innerHTML);
 	if(this.innerHTML === savedButtText) {
 		this.innerHTML = notSavedButtText;
 	} else {
@@ -56,7 +55,6 @@ function clickSaveButton() {
 // them to update on an individual basis
 function updateAllSavedPCs() {
 	for(var i = 0; i < saveButts.length; i++) {
-		console.log("savedPC"+i+"="+saveButts[i].innerHTML)
 		document.cookie = "savedPC"+i+"="+saveButts[i].innerHTML;
 	}
 }
@@ -80,13 +78,9 @@ document.getElementById("startFilter").onclick = function() {
 	var numTopics = 0;
 	for(var i = 2; i < filterChecks.length; i++) {
 		if(filterChecks[i].getElementsByTagName("input")[0].checked) {
-			console.log("filter number " + i + " is checked");
 			var topicName = filterChecks[i].id;
-			console.log("filter number " + i + " is " + topicName);
 			var postName = topicName.substring(0, topicName.length - 5)+"Post";
-			console.log("postName is " + postName);
 			var topicalPosts = document.getElementsByClassName(postName);
-			console.log("we found " + topicalPosts.length + " posts about " + postName);
 			
 			for(var j = 0; j < topicalPosts.length; j++) {
 				topicalPosts[j].style.display = "initial";
