@@ -6,9 +6,9 @@ function login(){
   }
   if ( username == "" || password == ""){}
   /*successLogin() here*/
-  else {
-    failLogin();
-  }
+ /* else {
+    failLogin(); 
+  } */
 }
 
 function dummySuccess(){
