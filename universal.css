@@ -133,7 +133,8 @@ li {
 /* Panels for filters and news */
 #filterPanel {
   position: fixed;
-  top: 28.5%;
+/*  top: 28.5%; For some reason this keeps changing... */
+  top: 30.5%; /* Aligns top of filter panel to top of first post */
   padding-bottom: 1%;
   width: 20%;
   left: 2%;
