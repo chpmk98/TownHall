@@ -13,6 +13,7 @@ function login(){
 
 function dummySuccess(){
   location.href = "dummyProfile.html";
+  document.cookie="signedIn=true";
 }
 
 function successLogin(){

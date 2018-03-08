@@ -60,6 +60,10 @@ li {
   font-family: Monotype Corsiva, cursive;
 }
 
+#curCity {
+  float: right;
+}
+
 #signIn {
   float: right;
   margin-right: 30px;

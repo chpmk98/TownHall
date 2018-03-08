@@ -1,11 +1,55 @@
 
 /* Discussion forum specific page and reply page*/
 
-#communityForum {
-  position: relative;
-  left: 40px;
-  text-decoration: underline;
+#ogPost {
+	position: relative;
+	float: right;
+	width: 90%;
+	margin-right: 5%;
+	border-radius: 2px;
+	background-color: #F9F9F9;
+
+	overflow: hidden;
+	*zoom: 1;
 }
+
+.ogPostSource {
+  margin: .25%;
+  font-size: 75%;
+  padding-left: 1%;
+  color: #869DA9;
+  overflow: hidden;
+}
+
+.ogPostBody {
+  margin-right: 2%;
+  font-size: 100%;
+  padding-left: 6.5%;
+}
+
+.reply1 {
+	position: relative;
+	width: 90%;
+	float: left;
+	margin-right: 5%;
+	border-radius: 2px;
+	background-color: #F2F2F2;
+}
+
+.aPost {
+  position: relative;
+  float: left;
+  width: 80%;
+  height: 194px;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  border-radius: 2px;
+  background-color: #F2F2F2;
+  transition: background-color .2s ease;
+
+  /*color: black;*/
+}
+
 .original-post {
 	position: relative;
 	width: 1100px;
