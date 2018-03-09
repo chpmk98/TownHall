@@ -26,7 +26,7 @@
   padding-left: 6.5%;
 }
 
-.reply1 {
+.reply {
 	position: relative;
 	width: 90%;
 	left: 6%;
@@ -34,6 +34,14 @@
 	padding-right: 2%;
 	margin-top: 1%;
 	background-color: #F2F2F2;
+}
+
+.replySource {
+	height: 3%;
+	width: 100%;
+	color: #869DA9;
+	font-size: 75%;
+	padding-top: 0.5%;
 }
 
 .aPost {
@@ -50,6 +58,7 @@
   /*color: black;*/
 }
 
+/*
 .original-post {
 	position: relative;
 	width: 1100px;
@@ -127,7 +136,7 @@
 	margin: 80px;
 }
 
-/* Discussion forum reply and new post forms */
+/* Discussion forum reply and new post forms 
 input[type=text] {
 	width: 100%;
 	padding: 12px 20px;
@@ -160,7 +169,7 @@ textarea {
 	resize: none;
 }
 
-/* Setup for in-page reply feature: */
+/* Setup for in-page reply feature: 
 #NUProperty-r-main-0 {display: none;}
 #NUProperty-r-main-1 {display: none;}
 #NUProperty-r-main-2 {display: none;}
