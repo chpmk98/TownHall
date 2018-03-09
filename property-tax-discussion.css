@@ -3,12 +3,11 @@
 
 #ogPost {
 	position: relative;
-	float: right;
 	width: 90%;
-	margin-right: 5%;
+	right: -5%;
 	border-radius: 2px;
 	background-color: #F9F9F9;
-
+	min-height: 0;
 	overflow: hidden;
 	*zoom: 1;
 }
@@ -30,9 +29,9 @@
 .reply1 {
 	position: relative;
 	width: 90%;
-	float: left;
-	margin-right: 5%;
+	left: 6%;
 	border-radius: 2px;
+	padding-right: 2%;
 	background-color: #F2F2F2;
 }
 

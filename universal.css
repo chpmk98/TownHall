@@ -231,7 +231,7 @@ li {
 
 /* Elements of the posts panel */
 #pageTitle {
-  font-family: Monotype Corsiva, cursive;
+  font-family: 'Open Sans', sans-serif;
   font-size: 300%;
   text-align: left;
   position: relative;
@@ -313,6 +313,7 @@ li {
   font-size: 150%;
   padding-left: 1%;
   overflow: hidden;
+  background-color: blue;
 }
 
 .postSave {
