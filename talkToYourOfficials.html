@@ -1,14 +1,19 @@
 <html>
 <head>
-  <title>HomePage</title>
-  <link rel="stylesheet" type="text/css" href="talkToYourOfficials.css"/>
+	<title>Talk To Your City Officials</title>
+	<link rel="stylesheet" type="text/css" href="talkToYourOfficials.css" />
+
+<!-- This stuff is for the headbar-->
   <link rel="stylesheet" type="text/css" href="universal.css" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <!-- This is the icons for news and forum in particular -->
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!-- End icons for news and forum -->
 </head>
 
 <body>
- <ul class="head-bar">
+<ul class="head-bar">
   	<li id="websiteName"><a href="homePage.html">TownHall</a></li>
   	<li id="myInterests"><a href="myInterests.html">My Interests</a></li>
   	<li id="savedPosts"><a href="savedPosts.html">Saved Posts</a></li>
@@ -16,49 +21,32 @@
   	<li id="signIn"><a href="signIn.html">Sign In</a></li>
   </ul>
 
-  <div id="postsPanel">
-    <div id="pageTitle">Talk to Your City Officials</div>
+<!-- Create account box -->
+    <form class="modal-content" action="homePage.html" onSubmit="alert('Thank you for your message! You will hear back from us shortly.')">
+			<div class="createProfileContainer">
+				<h1> Talk To Your City Officials</h1>
 
-    <div id = "talkForm">
-      <div class = "talkLine">
-        First Name <input type = "text" id = "talkFirstName">
-      </div>
+				<hr>
+				<label for="firstName"><b>First Name</b></label>
+				<input type="text" placeholder="Enter First Name" name="First Name" required>
 
-      <div class = "talkLine">
-        Last Name <input type = "text" id = "talkLastName">
-      </div>
+				<label for="lastName"><b>Last Name</b></label>
+				<input type="text" placeholder="Enter Last Name" name="Last Name" required>
 
-      <div class = "talkLine">
-        Street Address <input type = "text" id = "talkStreetAddress">
-      </div>
+				<label for="streetAddress"><b>Street Address</b></label>
+				<input type="text" placeholder="Enter Street Address" name="streetAddress" required>
 
-      <div class = "talkLine">
-        Topic
-        <select id = "talkTopic">
-          <option value = "default"> -- select an option -- </option>
-          <option value="Infrastructure">Infrastructure</option>
-          <option value="Zoning">Zoning</option>
-          <option value="City Services">City Services</option>
-          <option value="Other">Other</option>
-        </select>
-      </div>
+				<label for="subject"><b>Subject</b></label>
+				<input type="text" placeholder="Enter Message's Subject Line" name="subject" required>
 
-      <div class = "talkLine">
-        Subject <input type="text" id = "talkSubject">
-      </div>
+				<label for="message"><b> Message </b></label>
+				<textarea placeholder="Enter Message" id="message" required> </textarea>
 
-      <div id = "talkMessage" class = "talkLine">
-        Message <textarea id="talkMessageBox"></textarea>
-      </div>
-
-      <div id = "talkSubmit">
-          <button onclick = "submitForm()"> Submit </button>
-      </div>
-    </div>
-  </div>
-  <div id="bottomSpacer"></div>
+					<div class="clearfix">
+							<button type="submit" class="signupbtn">Submit</button>
+					</div>
+				</div>
+      </form>
 <div class="butt-bar"></div>
-<script src="talkToYourOfficials.js"></script>
 </body>
-
 </html>

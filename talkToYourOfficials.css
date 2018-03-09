@@ -1,6 +1,6 @@
 
 #TtYCO {
-  text-decoration: underline; 
+  text-decoration: underline;
   color: white;
 }
 
@@ -9,101 +9,161 @@
   clear: right;
 }
 
-input[type = "text"] {
-  border: 1px solid black;
-  border-radius: 3px;
+
+* {
+	box-sizing: border-box
+}
+/* Full-width input fields */
+input[type=text], input[type=password]{
+	width: 100%;
+	padding: 20px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #F2F2F2;
 }
 
-textarea{
-  border: 1px solid black;
-  border-radius: 3px;
+#message{
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #F2F2F2;
 }
 
-
-#talkTitle {
-  font-size: 30px;
-  margin: 25px;
-  margin-bottom: 10px;
-  margin-left: 50px; 
-}
-
-#talkForm {
-  margin: 40px;
-  margin-top: 0px;
-  width: 900px;
-}
-
-.talkLine{
-  margin: 15px;
-  height: 30px;
-}
-#talkFirstName{
-  position: relative;
-  left: 48px;
-  margin: 15px;
-  height: 30px;
-}
-
-#talkLastName {
-  height: 30px;
-  position: relative;
-  left: 49px;
-  margin: 15px;
-}
-
-#talkStreetAddress{
-  height: 30px;
-  position: relative;
-  left: 21px;
-  margin: 15px;
-}
-
-#talkTopic {
-  height: 30px;
-  position: relative;
-  left: 90px;
-  width: 166px;
-  z-index: 1;
-  margin: 15px;
-  border: 1px solid black;
-  border-radius: 3px;
-}
-
-#talkSubject {
-  height: 30px;
-  position: relative;
-  left: 74px;
-  margin: 15px;
-}
-
-#talkMessage{
-  position: relative;
-  top: -160px;
-  margin: 15px;
-}
-
-#talkMessageBox{
-  width: 600px;
-  height: 200px;
-  position: relative;
-  top: 187px;
-  left: 78px
+/* Checkbox input spacing */
+.individualCheckboxSpacing {
+	padding: 15px;
+	width: 16.66%;
+	float: left;
+	margin-bottom: 22px;
 }
 
 
-#talkSubmit{
-  margin: 15px;
-  position: relative;
-  left: 690px;
-  top: 210px;
+/* checkbox section spacing */
+.wrapper {
+	width: 100%;
+	margin: 5px 0 22px 0;
 }
 
-#talkThankYou {
-  text-align: center;
-  font-size: 150%;
-  position: relative;
-  top: 200px;
-  left: 30px;
-  text-decoration: none;
+	/* Add a background color when the inputs get focus */
+	input[type=text]:focus, input[type=password]:focus {
+		background-color: #E9E9E9;
+		outline: none;
+	}
 
+/* Set a style for all buttons */
+button {
+	background-color: #CCE3EF;
+	color: black;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+}
+
+button:hover {
+		opacity: 1;
+		background-color: #A9C0CC;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+	padding: 14px 20px;
+	background-color: #ACACAC;
+}
+
+.cancelbtn:hover {
+  background-color: #898989;
+  opacity: 1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+	float: left;
+	width: 25%;
+	font-weight: bolder;
+}
+
+/* Add padding to container elements */
+.createProfileContainer {
+	padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: #474e5d;
+	padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+
+	.close:hover,
+	.close:focus {
+		color: #f44336;
+		cursor: pointer;
+	}
+
+/* Clear floats */
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+	.cancelbtn, .signupbtn {
+		width: 100%;
+	}
+}
+
+/* Zipcode and Select Interests directions formatting */
+.zipcodeDirections {
+	font-weight: bolder;
+	font-size: 16px;
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 22px;
+}
+
+.interestsDirections {
+	font-weight: bolder;
+	font-size: 16px;
+	position: relative;
+	margin-top: 5px;
 }
