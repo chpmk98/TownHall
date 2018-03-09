@@ -236,7 +236,7 @@ li {
   text-align: left;
   position: relative;
   float: left;
-  width: 60%;
+  width: 70%;
   margin-top: 1%;
   margin-left: 5%;
   margin-bottom: 3%;
@@ -249,7 +249,7 @@ li {
   text-align: center;
   border-radius: 2px;
   margin-top: 3%;
-  margin-left: 8%;
+  margin-left: -2%;
   width: 10%;
   background-color: #DCF3FF;
   transition: background-color .2s ease;
