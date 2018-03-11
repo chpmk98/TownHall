@@ -295,7 +295,7 @@ li {
   position: relative;
   float: left;
   width: 5%;
-  height: 97%;
+  height: 10%;
   font-size: 200%;
   margin-top: .5%;
   margin-left: .6%;
@@ -333,7 +333,7 @@ li {
 .postSource {
   margin: .25%;
   font-size: 75%;
-  padding-left: 1%;
+  padding-left: 6.5%;
   color: #869DA9;
   overflow: hidden;
 }
@@ -341,7 +341,7 @@ li {
 .postBody {
   margin: .25%;
   font-size: 100%;
-  padding-left: 1%;
+  padding-left: 6.5%;
   height: 70%;
   overflow: hidden;
 }

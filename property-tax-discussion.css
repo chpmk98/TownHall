@@ -5,6 +5,7 @@
 	position: relative;
 	width: 90%;
 	right: -5%;
+	padding-bottom: 2%;
 	border-radius: 2px;
 	background-color: #F9F9F9;
 	min-height: 0;
@@ -26,14 +27,38 @@
   padding-left: 6.5%;
 }
 
+.postReply {
+  position: relative;
+  padding: 1%;
+  margin-top: 1%;
+  margin-left: 90%;
+  margin-right: 2%;
+  text-align: center;
+  font-size: 80%;
+  display: block;
+  background-color: #DCF3FF;
+  border-radius: 4px;
+  transition: background-color .2s ease;
+}
+
+.postReply:hover {
+  background-color: #CCE3EF;
+}
+
 .reply {
 	position: relative;
-	width: 90%;
+	width: 88%;
 	left: 6%;
 	border-radius: 2px;
+	padding-left: 2%;
 	padding-right: 2%;
+	padding-bottom: 1%;
 	margin-top: 1%;
 	background-color: #F2F2F2;
+}
+
+.replys {
+	background-color: #F9F9F9;
 }
 
 .replySource {
@@ -42,165 +67,4 @@
 	color: #869DA9;
 	font-size: 75%;
 	padding-top: 0.5%;
-}
-
-.aPost {
-  position: relative;
-  float: left;
-  width: 80%;
-  height: 194px;
-  margin-left: 5%;
-  margin-bottom: 2%;
-  border-radius: 2px;
-  background-color: #F2F2F2;
-  transition: background-color .2s ease;
-
-  /*color: black;*/
-}
-
-/*
-.original-post {
-	position: relative;
-	width: 1100px;
-	min-height: 50px;
-	overflow: hidden;
-	border: 5px solid rgb(132, 132, 132);
-	padding: 40px;
-	margin-top: 40px;
-	margin-left: 40px;
-	margin-right: 40px;
-	margin-bottom: 0px;
-	background-color: white;
-	border-radius: 4px;
-}
-
-.reply-post {
-	position: relative;
-	width: 1030px;
-	overflow: hidden;
-	border: 5px solid rgb(132, 132, 132);
-	border-top: 0px;
-	padding: 40px;
-	margin: 0px 40px;
-	left: 70px;
-	background-color: white;
-	border-radius: 4px;
-	float: left;
-}
-
-.reply-reply-post {
-	position: relative;
-	width: 960px;
-	overflow: hidden;
-	border: 5px solid rgb(132, 132, 132);
-	border-top: 0px;
-	padding: 40px;
-	margin: 0px 40px;
-	left: 140px;
-	background-color: white;
-	border-radius: 4px;
-	float: left;
-}
-
-.post-heading {
-	font-size: 30px;
-	margin: 10px;
-}
-
-.post-body {
-	font-size: 18px;
-	margin: 10px;
-	min-height: 0px;
-	overflow: hidden;
-}
-
-.reply-button {
-	border: 2px solid #CCE3EF; 
-	border-radius: 40px;
-	width: 60px;
-	height: 40px;
-	background-color: #CCE3EF;
-	font-weight: bolder;
-	position: relative;
-	float: right;
-	bottom: -10px;
-}
-
-.new-post {
-	padding: 40px;
-	margin: 40px;
-}
-
-.page-heading {
-	font-size: 30px;
-	margin: 80px;
-}
-
-/* Discussion forum reply and new post forms 
-input[type=text] {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	box-sizing: border-box;
-	border: 2px solid #ccc;
-	border-radius: 4px;
-}
-
-input[type=button] {
-	background-color: #CCE3EF;
-	border: none;
-	color: black;
-	padding: 16px 32px;
-	text-decoration: none;
-	margin: 4px 2px;
-	cursor: pointer;
-	border-radius: 4px;
-	font-size: 16px;
-}
-
-textarea {
-	width: 100%;
-	height: 150px;
-	padding: 12px 20px;
-	box-sizing: border-box;
-	border: 2px solid #ccc;
-	border-radius: 4px;
-	background-color: #ffffff;
-	resize: none;
-}
-
-/* Setup for in-page reply feature: 
-#NUProperty-r-main-0 {display: none;}
-#NUProperty-r-main-1 {display: none;}
-#NUProperty-r-main-2 {display: none;}
-#NUProperty-r-main-3 {display: none;}
-#NUProperty-nr-0 {display: none;}
-#NUProperty-nr-1 {display: none;}
-#NUProperty-nr-2 {display: none;}
-#NUProperty-nr-3 {display: none;}
-
-.submit-reply-button {
-	border: 2px solid #CCE3EF; 
-	border-radius: 40px;
-	width: 60px;
-	height: 40px;
-	background-color: #CCE3EF;
-	font-weight: bolder;
-	position: relative;
-	float: right;
-	bottom: -5px;
-	margin-left: 20px;
-	margin-right: 10px;
-}
-
-.cancel-reply-button {
-	border: 2px solid #f5f5f5; 
-	border-radius: 40px;
-	width: 60px;
-	height: 40px;
-	background-color: #f5f5f5;
-	font-weight: bolder;
-	position: relative;
-	float: right;
-	bottom: -5px;
 }
