@@ -350,7 +350,7 @@ li {
 /* Colors and classes for topics
    Selected from http://www.december.com/html/spec/colorshadescompact.html */
 /* blue */
-.news {
+.schools {
   background-color: #3579DC;
 }
 
@@ -365,12 +365,12 @@ li {
 }
 
 /* green */
-.money {
+.zoning {
   background-color: #A2C93A;
 }
 
 /* orange */
-.tech {
+.politics {
   background-color: #F87531;
 }
 
@@ -426,11 +426,11 @@ li {
   background-color: #ADC9F1;
 }
 /* On mouse-over, add a light blue background color */
-#newsCheck:hover input ~ .checkmark{
+#schoolsCheck:hover input ~ .checkmark{
   background-color: #71A1E6;
 }
 /* When the checkbox is checked, add an blue background */
-#newsCheck input:checked ~ .checkmark{
+#schoolsCheck input:checked ~ .checkmark{
   background-color: #3579DC;
 }
 
@@ -454,23 +454,23 @@ li {
   background-color: #7D26CD;
 }
 
-#moneyCheck input ~ .checkmark{
+#zoningCheck input ~ .checkmark{
   background-color: #DAE9B0;
 }
-#moneyCheck:hover input ~ .checkmark{
+#zoningCheck:hover input ~ .checkmark{
   background-color: #BED975;
 }
-#moneyCheck input:checked ~ .checkmark{
+#zoningCheck input:checked ~ .checkmark{
   background-color: #A2C93A;
 }
 
-#techCheck input ~ .checkmark{
+#politicsCheck input ~ .checkmark{
   background-color: #FCC6AA;
 }
-#techCheck:hover input ~ .checkmark{
+#politicsCheck:hover input ~ .checkmark{
   background-color: #FA9D6D;
 }
-#techCheck input:checked ~ .checkmark{
+#politicsCheck input:checked ~ .checkmark{
   background-color: #F87531;
 }
 
