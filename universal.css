@@ -313,7 +313,6 @@ li {
   font-size: 150%;
   padding-left: 1%;
   overflow: hidden;
-  background-color: blue;
 }
 
 .postSave {
@@ -422,7 +421,7 @@ li {
     background-color: #869DA9;
 }
 
-#newsCheck input ~ .checkmark{
+#schoolsCheck input ~ .checkmark{
   background-color: #ADC9F1;
 }
 /* On mouse-over, add a light blue background color */
