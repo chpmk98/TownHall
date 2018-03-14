@@ -1,6 +1,25 @@
 
 /* Discussion forum specific page and reply page*/
 
+.relatedPost {
+	position: relative;
+	padding: 2%;
+	margin-right: 10%;
+	font-size: 100%;
+	border-radius: 2px;
+	background-color: #F2F2F2;
+	transition: background-color .2s ease;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.relatedPost:hover {
+	background-color: #E9E9E9;
+}
+
 #ogPost {
 	position: relative;
 	width: 90%;
@@ -69,7 +88,7 @@
 	padding-top: 0.5%;
 }
 
-.reply input[type=text] {
+.reply input[type=text], #momReply input[type=text] {
 	position: relative;
 	width: 92%;
 	left: 6%;
@@ -79,16 +98,16 @@
 	border-radius: 2px;
 	border: none;
 	font-size: 100%;
-	background: #F9F9F9;
+	background-color: #F9F9F9;
 	transition: background-color .2s ease;
 }
 
-.reply input[type=text]:hover {
+.reply input[type=text]:hover, #momReply input[type=text]:hover {
 	background-color: white;
 }
 
 /* Add a background color when the inputs get focus */
-.reply input[type=text]:focus {
+.reply input[type=text]:focus, #momReply input[type=text]:focus {
 	background-color: white;
 	outline: none;
 }
