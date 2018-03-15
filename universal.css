@@ -98,6 +98,17 @@ li {
   font-family: Monotype Corsiva, cursive;
 }
 
+/* There is no My Interests when not signed in. */
+#myInterests {
+  display: none;
+}
+
+/* We assume you are a citizen if not signed in */
+/* as opposed to a city official. */
+#MaCA {
+  display: none;
+}
+
 #curCity {
   float: right;
 }

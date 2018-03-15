@@ -4,28 +4,24 @@ function login(){
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
   if (username==="mayor" && password==="evanston"){
-    dummySuccess();
+    loginMayor();
+  } else if (username==="rebmeistro" && password=="EECS330ismyJAM!"){
+    loginReb();
   } else {
     failLogin();
   }
-  if (username=== "" || password==""){}
-  /*successLogin() here*/
- /* else {
-    failLogin(); 
-  } */
 }
 
-function dummySuccess(){
-  console.log("successful Login!")
+function loginMayor(){
   document.signInForm.action = "https://chpmk98.github.io/dummyProfile.html"
-  document.cookie="signedIn=true";
+  document.cookie="signedIn=mayor";
 }
 
-function successLogin(){
-  /*this will be filled in when we figure out how */
+function loginReb(){
+  document.signInForm.action = "https://chpmk98.github.io/myProfile.html"
+  document.cookie="signedIn=rebmeistro";
 }
 
 function failLogin(){
-  console.log("unsuccessful login!")
   alert("Incorrect Username or Password");
 }
