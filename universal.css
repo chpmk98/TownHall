@@ -20,7 +20,7 @@ li {
 
 /* Headbar fonts, positioning, color, etc */
 .head-bar {
-  position: relative;
+ /* position: relative;*/
   margin: 0;
   padding: 0;
   top: -10px;
