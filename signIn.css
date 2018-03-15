@@ -48,7 +48,7 @@ button:hover {
 /* Float cancel and signup buttons and add an equal width */
 .forgotpwbtn, #signupbtn {
 	float: left;
-	width: 25%;
+	width: 33%;
 	font-weight: bolder;
 }
 
