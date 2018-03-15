@@ -1,0 +1,245 @@
+<html>
+<head>
+  <title>TownHall</title>
+  <link rel="stylesheet" type="text/css" href="homePage.css"/>
+
+<!-- This stuff is for the headbar-->
+  <link rel="stylesheet" type="text/css" href="universal.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <!-- This is the icons for news and forum in particular -->
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!-- End icons for news and forum -->
+</head>
+
+<body>
+  <ul class="head-bar">
+  	<li id="websiteName"><a href="homePage.html">TownHall</a></li>
+  	<li id="myInterests"><a href="myInterests.html">My Interests</a></li>
+  	<li id="savedPosts"><a href="savedPosts.html">Saved Posts</a></li>
+  	<li id="TtYCO"><a href="talkToYourOfficials.html">Talk to Your City Officials</a></li>
+  	<li id="signIn"><a href="signIn.html">Sign In</a></li>
+	<li class="dropdown">
+  		<a href="javascript:void(0)" class="dropbtn">Boston, MA</a>
+  		<div class="dropdown-content">
+  			<a href="evanstonHomePage.html">Evanston, IL</a>
+  			<a href="seattleHomePage.html">Seattle, WA</a>
+  		</div>
+  	</li>
+  </ul>
+
+  <ul class="signInPrompt">
+  	<li id="promptText">Create a profile to save your interests:</li>
+  	<li id="createAProfile"><a href="accountCreation.html">Create a Profile!</a></li>
+  	<li id="dismissPrompt">X Dismiss</li>
+  </ul>
+<!-- This is the end of the headbar -->
+
+<!-- This is stuff for the filter panel -->
+  <div id="filterPanel">
+  	<div class="filterTitle">Filter Posts by Type:</div>
+	<div class="filtersBox">
+  	  <label class="container"><i class="fa">&#xf1ea;</i> News Articles
+      	<input type="checkbox">
+      	<span class="checkmark"></span>
+      </label>
+	  <label class="container"><i class="material-icons forum20">forum</i>Discussions
+  	  	<input type="checkbox">
+  	  	<span class="checkmark"></span>
+	  </label>
+	</div>
+
+  	<div class="filterTitle">Filter Posts by Interest:</div>
+  	<div class="filtersBoxes">
+  	  <label class="container" id="schoolsCheck"> Schools
+      	<input type="checkbox">
+      	<span class="checkmark"></span>
+      </label>
+	  <label class="container" id="sportsCheck">Sports
+  	  	<input type="checkbox">
+  	  	<span class="checkmark"></span>
+	  </label>
+	  <label class="container" id="lifeCheck">Life
+  	  	<input type="checkbox">
+  	  	<span class="checkmark"></span>
+	  </label>
+	</div>
+	<div class="filtersBoxes">
+	  <label class="container" id="zoningCheck">Zoning
+  	    <input type="checkbox">
+  	    <span class="checkmark"></span>
+	  </label>
+	  <label class="container" id="politicsCheck">Politics
+  	    <input type="checkbox">
+  	    <span class="checkmark"></span>
+	  </label>
+	  <label class="container" id="otherCheck">Other
+  	    <input type="checkbox">
+  	    <span class="checkmark"></span>
+	  </label>
+	</div>
+
+	<ul id="setFilterButtons">
+	  <li id="startFilter">Filter!</li>
+	  <li id="resetFilter">Reset</li>
+	</ul>
+  </div>
+<!-- This is the end of the filter panel -->
+
+<!-- This is stuff for the posts panel -->
+  <div id="postsPanel">
+    <div id="pageTitle">Top Stories and Discussions</div>
+
+  	<!-- These are posts. They need to be copied to savedPosts and myInterests -->
+  	<div class="aPost schoolsPost"> <!-- Change the topic here -->
+  	  <div class="schools postBar"></div> <!-- Change the topic here -->
+  	  <div class="postIcon">
+  	  	<i class="fa">&#xf1ea;</i> <!-- Change the type here -->
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Schools News Article</div>
+  	  <div class="postSource">sourced from The Chicago Tribune</div>
+  	  <div class="postBody">This is the body of the post. Here is some text</div>
+  	</div>
+  	
+  	<div class="aPost lifePost"> <!-- Change the topic here -->
+  	  <div class="life postBar"></div> <!-- Change the topic here -->
+  	  <div class="postIcon">
+  		<i class="material-icons forum130">forum</i> <!-- Change the type here -->
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Life Discussion</div>
+  	  <div class="postSource">posted by Alvin Tan</div>
+  	  <div class="postBody">This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text000000000... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too muchoooooooooo text... Will it automatically end or will it just run out of the container? </div>
+  	</div>
+
+    <div class="aPost sportsPost">
+  	  <div class="sports postBar"></div>
+  	  <div class="postIcon">
+  	  	<i class="fa">&#xf1ea;</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Sports News Article</div>
+  	  <div class="postSource">sourced from The Chicago Tribune</div>
+  	  <div class="postBody">This is the body of the post. Here is some text</div>
+  	</div>
+  	
+  	<div class="aPost zoningPost">
+  	  <div class="zoning postBar"></div>
+  	  <div class="postIcon">
+  		<i class="material-icons forum130">forum</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Zoning Discussion</div>
+  	  <div class="postSource">posted by Alvin Tan</div>
+  	  <div class="postBody">This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text000000000... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too muchoooooooooo text... Will it automatically end or will it just run out of the container? </div>
+  	</div>
+
+  	<div class="aPost politicsPost">
+  	  <div class="politics postBar"></div>
+  	  <div class="postIcon">
+  	  	<i class="fa">&#xf1ea;</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Politics News Article</div>
+  	  <div class="postSource">sourced from The Chicago Tribune</div>
+  	  <div class="postBody">This is the body of the post. Here is some text</div>
+  	</div>
+  	
+  	<div class="aPost otherPost">
+  	  <div class="other postBar"></div>
+  	  <div class="postIcon">
+  		<i class="material-icons forum130">forum</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is an Other Discussion</div>
+  	  <div class="postSource">posted by Alvin Tan</div>
+  	  <div class="postBody">This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text000000000... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too muchoooooooooo text... Will it automatically end or will it just run out of the container? </div>
+  	</div>
+
+  	<div class="aPost lifePost"> <!-- Change the topic here -->
+  	  <div class="life postBar"></div> <!-- Change the topic here -->
+  	  <div class="postIcon">
+  	  	<i class="fa">&#xf1ea;</i> <!-- Change the type here -->
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Life News Article</div>
+  	  <div class="postSource">sourced from The Chicago Tribune</div>
+  	  <div class="postBody">This is the body of the post. Here is some text</div>
+  	</div>
+  	
+  	<div class="aPost schoolsPost"> <!-- Change the topic here -->
+  	  <div class="schools postBar"></div> <!-- Change the topic here -->
+  	  <div class="postIcon">
+  		<i class="material-icons forum130">forum</i> <!-- Change the type here -->
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Schools Discussion</div>
+  	  <div class="postSource">posted by Alvin Tan</div>
+  	  <div class="postBody">This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text000000000... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too muchoooooooooo text... Will it automatically end or will it just run out of the container? </div>
+  	</div>
+
+    <div class="aPost zoningPost">
+  	  <div class="zoning postBar"></div>
+  	  <div class="postIcon">
+  	  	<i class="fa">&#xf1ea;</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Zoning News Article</div>
+  	  <div class="postSource">sourced from The Chicago Tribune</div>
+  	  <div class="postBody">This is the body of the post. Here is some text</div>
+  	</div>
+  	
+  	<div class="aPost schoolsPost"> <!-- Change the topic here -->
+  	  <div class="schools postBar"></div> <!-- Change the topic here -->
+  	  <div class="postIcon">
+  		<i class="material-icons forum130">forum</i> <!-- Change the type here -->
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <a href="http://chpmk98.github.io/property-tax-discussion.html">
+  	  	<div class="postHeadline">Should Northwestern Pay Property Tax?</div>
+  	  	<div class="postSource">posted by Alvin Tan</div>
+  	  	<div class="postBody">Honestly, I don't understand why everyone complains so much about Northwestern University not paying property tax. I mean, it's not like NU even owns that much land! Like, the city of Evanston has so territory, the area that NU is on is negligable. Is Northwestern even part of Evanston? I think at this point, one could argue that it is actually Evanston that is part of Northwestern University. In fact, Evanston should start paying property tax to Northwestern! Yeah, I said it! Look, I know it's not a popular opinion, but I honestly believe that Evanston residents should just suck it up and deal with the fact that broke college students shouldn't have to pay property tax, plain and simple.</div>
+  	  </a>
+  	</div>
+
+  	<div class="aPost sportsPost">
+  	  <div class="sports postBar"></div>
+  	  <div class="postIcon">
+  		<i class="material-icons forum130">forum</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Sports Discussion</div>
+  	  <div class="postSource">posted by Alvin Tan</div>
+  	  <div class="postBody">This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text000000000... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too muchoooooooooo text... Will it automatically end or will it just run out of the container? </div>
+  	</div>
+
+  	<div class="aPost otherPost">
+  	  <div class="other postBar"></div>
+  	  <div class="postIcon">
+  	  	<i class="fa">&#xf1ea;</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is an Other News Article</div>
+  	  <div class="postSource">sourced from The Chicago Tribune</div>
+  	  <div class="postBody">This is the body of the post. Here is some text</div>
+  	</div>
+  	
+  	<div class="aPost politicsPost">
+  	  <div class="politics postBar"></div>
+  	  <div class="postIcon">
+  		<i class="material-icons forum130">forum</i>
+  	  </div>
+  	  <div class="postSave">Save for Later</div>
+  	  <div class="postHeadline">This is a Politics Discussion</div>
+  	  <div class="postSource">posted by Alvin Tan</div>
+  	  <div class="postBody">This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too much text000000000... Will it automatically end or will it just run out of the container? This is the body of the post. Here is some more text. I wonder what happens if there's just too muchoooooooooo text... Will it automatically end or will it just run out of the container? </div>
+  	</div>
+  	<!-- This is the end of posts -->
+  </div>
+<!-- This is the end of the posts panel -->
+<div class="butt-bar"></div>
+<script src="homePage.js"></script>
+</body>
+
+</html>
