@@ -19,6 +19,21 @@ var saveButts = document.getElementsByClassName("postSave");
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	}
 
+	// Modifies the headbar depending on who's signed in
+	if(getCookie("signedIn") === "mayor") {
+		document.getElementById("TtYCO").style.display = "none";
+		document.getElementById("signIn").style.display = "none";
+		document.getElementById("MaCA").style.display = "initial";
+		document.getElementById("myInterests").style.display = "initial";
+		document.getElementById("mayorProfile").style.display = "initial";
+		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
+	} else if(getCookie("signedIn") === "rebmeistro") {
+		document.getElementById("signIn").style.display = "none";
+		document.getEelemntById("myInterests").style.display = "initial";
+		document.getElementById("rebProfile").style.display = "initial";
+		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
+	}
+
 	for(var i = 0; i < saveButts.length; i++) {
 		// Adds clicking functionality to each save button
 		saveButts[i].addEventListener("click", clickSaveButton);

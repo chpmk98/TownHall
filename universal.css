@@ -113,6 +113,18 @@ li {
   float: right;
 }
 
+#rebProfile {
+  float: right;
+  margin-right: 30px;
+  display: none;
+}
+
+#mayorProfile {
+  float: right;
+  margin-right: 30px;
+  display: none;
+}
+
 #signIn {
   float: right;
   margin-right: 30px;
