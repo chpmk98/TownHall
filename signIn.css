@@ -29,10 +29,10 @@ button {
 	opacity: 0.9;
 }
 
-	button:hover {
-		opacity: 1;
-		background-color: #A9C0CC;
-	}
+button:hover {
+	opacity: 1;
+	background-color: #A9C0CC;
+}
 
 /* Extra styles for the forgot password button */
 .forgotpwbtn {
@@ -46,7 +46,7 @@ button {
 	}
 
 /* Float cancel and signup buttons and add an equal width */
-.forgotpwbtn, .signupbtn {
+.forgotpwbtn, #signupbtn {
 	float: left;
 	width: 25%;
 	font-weight: bolder;
@@ -95,7 +95,7 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-	.forgotpwbtn, .signupbtn {
+	.forgotpwbtn, #signupbtn {
 		width: 100%;
 	}
 }

@@ -1,10 +1,14 @@
+document.getElementById("signupbtn").addEventListener("click", login);
+
 function login(){
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  if ( username == "mayor" && password=="evanston"){
+  if (username==="mayor" && password==="evanston"){
     dummySuccess();
+  } else {
+    failLogin();
   }
-  if ( username == "" || password == ""){}
+  if (username=== "" || password==""){}
   /*successLogin() here*/
  /* else {
     failLogin(); 
@@ -12,6 +16,7 @@ function login(){
 }
 
 function dummySuccess(){
+  console.log("successful Login!")
   location.href = "dummyProfile.html";
   document.cookie="signedIn=true";
 }
@@ -21,5 +26,6 @@ function successLogin(){
 }
 
 function failLogin(){
+  console.log("unsuccessful login!")
   alert("Incorrect Username or Password");
 }
