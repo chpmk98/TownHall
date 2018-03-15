@@ -2,6 +2,20 @@
 	This JS is for replying on the NU Property Tax Community Forum thread
 */
 
+inputField = document.getElementsByTagName("input")[0];
+
+inputField.addEventListener("keyup", function(event) {
+
+	event.preventDefault();
+
+	if(event.keyCode === 13) {
+		document.getElementById("yourTextBody").innerHTML = inputField.value;
+		document.getElementById("yourReply").style.display = "initial";
+		inputField.value = "";
+	}
+});
+
+/*
 var num = 4;
 
 for(var i = 0; i < num; i++) {
@@ -35,3 +49,4 @@ function borderChange(index){
 	var i = parseInt(index)+1;
 	document.getElementById("NUProperty-r-main-body-"+i).style.borderTop = "5px";
 }
+*/

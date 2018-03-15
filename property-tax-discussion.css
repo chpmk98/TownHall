@@ -20,6 +20,16 @@ a {
 	background-color: #E9E9E9;
 }
 
+#ogPostIcon {
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 7%;
+  font-size: 200%;
+  margin-top: .5%;
+  margin-left: .6%;
+}
+
 #ogPost {
 	position: relative;
 	width: 90%;
@@ -33,6 +43,8 @@ a {
 }
 
 .ogPostSource {
+	position: relative;
+	float: left;
   margin: .25%;
   font-size: 75%;
   padding-left: 1%;
@@ -40,34 +52,35 @@ a {
   overflow: hidden;
 }
 
+.ogPostTime {
+	position: relative;
+	float: right;
+  margin: .25%;
+  font-size: 75%;
+  padding-left: 1%;
+  color: #869DA9;
+  overflow: hidden;
+  text-align: right;
+  padding-right: 2%;
+}
+
 .ogPostBody {
+	clear:left;
   margin-right: 2%;
   font-size: 100%;
   padding-left: 6.5%;
+  margin-top: -1%;
 }
 
-.postReply {
-  position: relative;
-  padding: 1%;
-  /*margin-top: 1%;*/
-  margin-left: 90%;
-  margin-right: 2%;
-  text-align: center;
-  font-size: 80%;
-  display: block;
-  background-color: #DCF3FF;
-  border-radius: 2px;
-  transition: background-color .2s ease;
-}
-
-.postReply:hover {
-  background-color: #CCE3EF;
+#yourReply {
+	display: none;
 }
 
 .reply {
 	position: relative;
 	width: 88%;
 	left: 6%;
+	float: left;
 	border-radius: 2px;
 	padding-left: 2%;
 	padding-right: 2%;
@@ -81,11 +94,25 @@ a {
 }
 
 .replySource {
+	position: relative;
 	height: 3%;
-	width: 100%;
+	width: 50%;
 	color: #869DA9;
 	font-size: 75%;
 	padding-top: 0.5%;
+	float: left;
+}
+
+.replyTime {
+	position: relative;
+	height: 3%;
+	width: 48.5%;
+	color: #869DA9;
+	font-size: 75%;
+	padding-top: 0.5%;
+	float: right;
+	text-align: right;
+	padding-right: 1.5%;
 }
 
 .reply input[type=text], #momReply input[type=text] {
