@@ -34,11 +34,11 @@ li {
 }
 
 .head-bar li a {
-  display: block;
-  padding-top: 27px;
+  display: inline-block;
+  padding-top: 21px;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 32px;
+  padding-bottom: 25px;
 
   color: white;
   text-align: center;
@@ -47,6 +47,44 @@ li {
 
 .head-bar li:hover {
   background-color: #1D3440;
+}
+
+.dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	/*padding: 14px 16px;*/
+	text-decoration: none;
+}
+
+.dropdown {
+	display: inline-block;
+	float: right;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	overflow: visible;
+	background-color: #f9f9f9;
+	min-width: 137px;
+	z-index: 1;
+}
+
+.dropdown-content a {
+		color: black;
+		/*padding: 12px 16px;*/
+		text-decoration: none;
+		display: block;
+		text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
 }
 
 #websiteName {
