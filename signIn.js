@@ -17,7 +17,7 @@ function login(){
 
 function dummySuccess(){
   console.log("successful Login!")
-  location.href = "dummyProfile.html";
+  document.signInForm.action = "https://chpmk98.github.io/dummyProfile.html"
   document.cookie="signedIn=true";
 }
 
