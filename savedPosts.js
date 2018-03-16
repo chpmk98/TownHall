@@ -35,6 +35,10 @@ var saveButts = document.getElementsByClassName("postSave");
 		document.getElementById("curCity").style.display = "none";    
 	}
 
+	// Filters the page by what is already entered (useful when
+	// nagivating to this page with the back button)
+	document.getElementById("startFilter").click();
+
 	for(var i = 0; i < saveButts.length; i++) {
 		// Adds clicking functionality to each save button
 		saveButts[i].addEventListener("click", clickSaveButton);
