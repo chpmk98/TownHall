@@ -24,7 +24,6 @@ inputField.addEventListener("keyup", function(event) {
 		document.getElementById("TtYCO").style.display = "none";
 		document.getElementById("signIn").style.display = "none";
 		document.getElementById("MaCA").style.display = "initial";
-		document.getElementById("myInterests").style.display = "initial";
 		document.getElementById("mayorProfile").style.display = "initial";
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	} else if(getCookie("signedIn") === "rebmeistro") {
