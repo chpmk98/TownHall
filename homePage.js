@@ -21,16 +21,16 @@ var saveButts = document.getElementsByClassName("postSave");
 
 	// Modifies the headbar depending on who's signed in
 	if(getCookie("signedIn") === "mayor") {
-		document.getElementById("TtYCO").style.display = "none";
-		document.getElementById("signIn").style.display = "none";
-		document.getElementById("MaCA").style.display = "initial";
-		document.getElementById("myInterests").style.display = "initial";
-		document.getElementById("mayorProfile").style.display = "initial";
+		document.getElementByID("TtYCO").style.display = "none";
+		document.getElementByID("signIn").style.display = "none";
+		document.getElementByID("MaCA").style.display = "initial";
+		document.getElementByID("myInterests").style.display = "initial";
+		document.getElementByID("mayorProfile").style.display = "initial";
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	} else if(getCookie("signedIn") === "rebmeistro") {
-		document.getElementById("signIn").style.display = "none";
-		document.getEelemntById("myInterests").style.display = "initial";
-		document.getElementById("rebProfile").style.display = "initial";
+		document.getElementByID("signIn").style.display = "none";
+		document.getElementByID("myInterests").style.display = "initial";
+		document.getElementByID("rebProfile").style.display = "initial";
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	}
 
