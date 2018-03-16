@@ -191,7 +191,7 @@ img{
     height: 340px;
     width: 18%;
     display: none; /*onclick it becomes visible.*/
-    z-index: 2;
+    z-index: 5;
     position: fixed;
     bottom: 0%;
     right: 3.5%;
