@@ -14,6 +14,12 @@ var saveButts = document.getElementsByClassName("postSave");
 
 // This function runs immediately upon opening the page
 (function() {
+
+	// Filters the page by what is already entered (useful when
+	// nagivating to this page with the back button)
+	doTheFilter();
+	console.log("Should be filtered!");
+
 	// This if statement hides the banner if it has already been closed
 	if(getCookie("homePagePrompt") === "dismissed") {
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
@@ -40,10 +46,6 @@ var saveButts = document.getElementsByClassName("postSave");
 		document.getElementById("curCity").style.display = "none";    
 	}
 
-	// Filters the page by what is already entered (useful when
-	// nagivating to this page with the back button)
-	doTheFilter();
-	console.log("Should be filtered!");
 
 	for(var i = 0; i < saveButts.length; i++) {
 		// Adds clicking functionality to each save button
