@@ -1,0 +1,68 @@
+﻿<html>
+
+<head>
+	<title>Northwestern Property Tax</title>
+	<link rel="stylesheet" type="text/css" href="discussion.css" />
+
+<!-- This stuff is for the headbar-->
+  <link rel="stylesheet" type="text/css" href="universal.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <!-- This is the icons for news and forum in particular -->
+  <link href="https://fonts.googleapis.com/css?family=Limelight|Open+Sans" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!-- End icons for news and forum -->
+
+</head>
+<body>
+  <ul class="head-bar">
+  	<li id="websiteName"><a href="homePage.html">TownHall</a></li>
+  	<li id="myInterests"><a href="myInterests.html">My Interests</a></li>
+  	<li id="savedPosts"><a href="savedPosts.html">Saved Posts</a></li>
+  	<li id="TtYCO"><a href="talkToYourOfficials.html">Talk to Your City Officials</a></li>
+    <li id="MaCA"><a href="">Make a City Announcement</a></li>
+  	<li id="signIn"><a href="signIn.html">Sign In</a></li>
+    <li id="rebProfile"><a href="myProfile.html">Hi, Rebecca!</a></li>
+    <li id="mayorProfile"><a href="dummyProfile.html">Hi, Mayor!</a></li>
+	  <li class="dropdown" id="curCity">
+  		<a href="javascript:void(0)" class="dropbtn">Set Location</a>
+  		<div class="dropdown-content">
+  			<a href="evanstonHomePage.html">Evanston, IL</a>
+  			<a href="seattleHomePage.html">Seattle, WA</a>
+  			<a href="bostonHomePage.html">Boston, MA</a>
+  		</div>
+  	</li>
+  </ul>
+
+	<div id="filterPanel">
+		<div class="filterTitle">Related Posts: </div>
+		<div class="filtersBox">
+			<a href="http://www.google.com"><div class="relatedPost">Google</div></a>
+		</div>
+	</div>
+
+	<div id="postsPanel">
+		<div id="pageTitle">Discussion</div>
+
+		<div id="dummyPost" class="schoolsPost"> <!-- Change the topic here -->
+			<div class="schools postBar"></div> <!-- Change the topic here -->
+			<div id="ogPostIcon">
+				<i class="material-icons forum130">forum</i> <!-- Change the type here -->
+			</div>
+			<div class="postSave">Save for Later</div>
+			<div class="postHeadline">This is a fake discussion post. Thanks for stopping by!
+			</div>
+			<div class="ogPostSource">posted by Admin</div>
+			<div class="ogPostTime">March 14rd, 2018</div>
+			<div class="ogPostBody">This is a fake discussion post. Thanks for stopping by!
+			</div>
+			<div id="ogReply"><input type="text" placeholder="Reply" name="replyOG"></div>
+		</div>
+	</div>
+	<div class="butt-bar"></div>
+<!-- End of hidden reply box #3. -->
+
+<!-- This is our JS File -->
+	<script src="NUPropertyTax.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+/* Discussion forum specific page and reply page*/
+
+.relatedPost {
+	position: relative;
+	padding: 2%;
+	margin-right: 10%;
+	font-size: 100%;
+	border-radius: 2px;
+	background-color: #F2F2F2;
+	transition: background-color .2s ease;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.relatedPost:hover {
+	background-color: #E9E9E9;
+}
+
+#ogPostIcon {
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 7%;
+  font-size: 200%;
+  margin-top: .5%;
+  margin-left: .6%;
+}
+
+#ogPost {
+	position: relative;
+	width: 90%;
+	right: -5%;
+	padding-bottom: 2%;
+	border-radius: 2px;
+	background-color: #F9F9F9;
+	min-height: 0;
+	overflow: hidden;
+	*zoom: 1;
+}
+#dummyPost {
+	position: relative;
+	width: 90%;
+	right: -5%;
+	padding-bottom: 30%;
+	border-radius: 2px;
+	background-color: #F9F9F9;
+	min-height: 0;
+	overflow: hidden;
+	*zoom: 1;
+}
+.ogPostSource {
+	position: relative;
+	float: left;
+  margin: .25%;
+  font-size: 75%;
+  padding-left: 1%;
+  color: #869DA9;
+  overflow: hidden;
+}
+
+.ogPostTime {
+	position: relative;
+	float: right;
+  margin: .25%;
+  font-size: 75%;
+  padding-left: 1%;
+  color: #869DA9;
+  overflow: hidden;
+  text-align: right;
+  padding-right: 2%;
+}
+
+.ogPostBody {
+	clear:left;
+  margin-right: 2%;
+  font-size: 100%;
+  padding-left: 6.5%;
+  margin-top: -1%;
+}
+
+#yourReply {
+	display: none;
+}
+
+.reply {
+	position: relative;
+	width: 88%;
+	left: 6%;
+	float: left;
+	border-radius: 2px;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 1%;
+	margin-top: 1%;
+	background-color: #F2F2F2;
+}
+
+.replys {
+	background-color: #F9F9F9;
+}
+
+.replySource {
+	position: relative;
+	height: 3%;
+	width: 50%;
+	color: #869DA9;
+	font-size: 75%;
+	padding-top: 0.5%;
+	float: left;
+}
+
+.replyTime {
+	position: relative;
+	height: 3%;
+	width: 48.5%;
+	color: #869DA9;
+	font-size: 75%;
+	padding-top: 0.5%;
+	float: right;
+	text-align: right;
+	padding-right: 1.5%;
+}
+
+.reply input[type=text], #momReply input[type=text] {
+	position: relative;
+	width: 92%;
+	left: 6%;
+	padding: 20px;
+	margin-top: 1%;
+	display: inline-block;
+	border-radius: 2px;
+	border: none;
+	font-size: 100%;
+	background-color: #F9F9F9;
+	transition: background-color .2s ease;
+}
+
+.reply input[type=text]:hover, #momReply input[type=text]:hover {
+	background-color: white;
+}
+
+/* Add a background color when the inputs get focus */
+.reply input[type=text]:focus, #momReply input[type=text]:focus {
+	background-color: white;
+	outline: none;
+}
+
+.replys input[type=text], #ogReply input[type=text] {
+	position: relative;
+	width: 92%;
+	left: 6%;
+	padding: 20px;
+	margin-top: 1%;
+	display: inline-block;
+	border-radius: 2px;
+	border: none;
+	font-size: 100%;
+	background: #F2F2F2;
+	transition: background-color .2s ease;
+}
+
+.replys input[type=text]:hover, #ogReply input[type=text]:hover {
+	background-color: #E9E9E9;
+}
+
+/* Add a background color when the inputs get focus */
+.replys input[type=text]:focus, #ogReply input[type=text]:focus {
+	background-color: #E9E9E9;
+	outline: none;
+}
