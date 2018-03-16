@@ -25,21 +25,20 @@ inputField.addEventListener("keyup", function(event) {
 	if(getCookie("signedIn") === "mayor") {
 		document.getElementById("TtYCO").style.display = "none";
 		document.getElementById("signIn").style.display = "none";
+		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 		document.getElementById("MaCA").style.display = "initial";
 		document.getElementById("mayorProfile").style.display = "initial";
-		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	} else if(getCookie("signedIn") === "rebmeistro") {
 		document.getElementById("signIn").style.display = "none";
+		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 		document.getElementById("myInterests").style.display = "initial";
 		document.getElementById("rebProfile").style.display = "initial";
-		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	} else {
 		// Hides the reply boxes if not signed in
 		for(var i = 0; i < document.getElementsByTagName("input").length; i++) {
 			document.getElementsByTagName("input")[i].style.display = "none";
 		}
 		
-		document.getElementsByClassName("signInPrompt")[0].style.display = "initial";
 		document.getElementById("evanstonLoc").style.display = "initial";
 		document.getElementById("curCity").style.display = "none";
 	}
