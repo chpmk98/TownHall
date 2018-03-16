@@ -33,3 +33,36 @@ function getCookie(cname) {
     }
     return "";
 }
+
+
+var counter = 0;
+
+function exitChat(){
+
+  document.getElementById("chatScreen").style.display = "none";
+}
+
+
+//when chat button is clicked, the chat drop down appears
+function displayChats() {
+  var elem = document.getElementById("chatDropDown");
+  if(counter % 2 == 0){ //if it's even it means the dropdown is not being shown
+    elem.setAttribute("style","display: block;");
+  }
+  else{
+    elem.setAttribute("style", "display: none;");
+  }
+  counter = counter + 1;
+}
+
+function selectChat() {
+  document.getElementById("chatScreen").style.display = "block";
+}
+
+function sendMessage() {
+  var thisMessage = document.getElementById("chat5");
+   document.getElementById('chat5').innerHTML = document.getElementById('chatInput').value;
+   thisMessage.setAttribute("style", "display: block;");
+   document.getElementById("chatInput").style.display = "none";
+  
+}
