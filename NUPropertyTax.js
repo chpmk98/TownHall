@@ -2,6 +2,8 @@
 	This JS is for replying on the NU Property Tax Community Forum thread
 */
 
+var cookieMinutes = 10; // Determines how long the banner stays dismissed
+
 inputField = document.getElementsByTagName("input")[0];
 
 inputField.addEventListener("keyup", function(event) {
@@ -36,11 +38,26 @@ inputField.addEventListener("keyup", function(event) {
 		for(var i = 0; i < document.getElementsByTagName("input").length; i++) {
 			document.getElementsByTagName("input")[i].style.display = "none";
 		}
-
+		
+		document.getElementsByClassName("signInPrompt")[0].style.display = "initial";
 		document.getElementById("evanstonLoc").style.display = "initial";
-		document.getElementById("curCity").style.display = "none";    
+		document.getElementById("curCity").style.display = "none";
+	}
+
+	// If the prompt has already been dismissed, do not show it
+	if(getCookie("discussionPrompt") === "dismissed") {
+		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	}
 }) ();
+
+// Closing the banner keeps it closed for 10 minutes, even if you leave
+// the page and return.
+document.getElementById("dismissPrompt").onclick = function() {
+	document.getElementsByClassName("signInPrompt")[0].style.display = "none";
+	var time = new Date();
+	time.setTime(time.getTime() + (cookieMinutes*60*1000));
+	document.cookie = "discussionPrompt=dismissed; expires="+time.toUTCString();
+}
 
 // Takes a cookie label and returns the value stored in the cookie
 // If there is no such cookie, returns ""

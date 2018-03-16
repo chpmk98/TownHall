@@ -51,7 +51,7 @@ var saveButts = document.getElementsByClassName("postSave");
 	}
 }) ();
 
-// Closing the banner keeps it closed for 30 seconds, even if you leave
+// Closing the banner keeps it closed for 10 minutes, even if you leave
 // the page and return.
 document.getElementById("dismissPrompt").onclick = function() {
 	document.getElementsByClassName("signInPrompt")[0].style.display = "none";
