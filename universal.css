@@ -347,6 +347,14 @@ li {
   text-decoration: none;
 }
 
+.aPosttext {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 194px;
+  z-index: 1;
+}
+
 .postBar {
   position: relative;
   border-top-left-radius: 2px;
@@ -381,14 +389,15 @@ li {
 }
 
 .postSave {
-  position: relative;
+  position: absolute;
   padding: 1%;
   font-size: 80%;
-  float: right;
+  right:0;
   display: block;
   background-color: #DCF3FF;
   border-bottom-left-radius: 4px;
   transition: background-color .2s ease;
+  z-index: 2;
 }
 
 .postSave:hover {
@@ -480,7 +489,7 @@ li {
 .container:hover input ~ .checkmark {
     background-color: #ccc;
 }
-/* When the checkbox is checked, add a default blue background 
+/* When the checkbox is checked, add a default blue background
    that somewhat matches the headbar */
 .container input:checked ~ .checkmark {
     background-color: #869DA9;
@@ -572,23 +581,3 @@ li {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
