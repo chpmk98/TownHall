@@ -178,6 +178,10 @@ li {
   background-color: initial;
 }
 
+#dismissPrompt:hover {
+  background-color: #F99E9A;
+}
+
 #createAProfile {
   margin: 0;
   padding: 0;
