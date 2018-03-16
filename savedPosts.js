@@ -30,6 +30,9 @@ var saveButts = document.getElementsByClassName("postSave");
 		document.getElementById("myInterests").style.display = "initial";
 		document.getElementById("rebProfile").style.display = "initial";
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
+	} else {
+		document.getElementById("evanstonLoc").style.display = "initial";
+		document.getElementById("curCity").style.display = "none";    
 	}
 
 	for(var i = 0; i < saveButts.length; i++) {

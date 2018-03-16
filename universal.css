@@ -114,6 +114,11 @@ li {
   float: right;
 }
 
+#evanstonLoc {
+  float: right;
+  display: none;
+}
+
 #rebProfile {
   float: right;
   margin-right: 30px;

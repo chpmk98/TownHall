@@ -31,6 +31,14 @@ inputField.addEventListener("keyup", function(event) {
 		document.getElementById("myInterests").style.display = "initial";
 		document.getElementById("rebProfile").style.display = "initial";
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
+	} else {
+		// Hides the reply boxes if not signed in
+		for(var i = 0; i < getElementsByTagName("input").length; i++) {
+			getElementsByTagName("input")[i].style.display = "none";
+		}
+
+		document.getElementById("evanstonLoc").style.display = "initial";
+		document.getElementById("curCity").style.display = "none";    
 	}
 }) ();
 

@@ -13,6 +13,9 @@
     document.getElementById("signIn").style.display = "none";
     document.getElementById("myInterests").style.display = "initial";
     document.getElementById("rebProfile").style.display = "initial";
+  } else {
+    document.getElementById("evanstonLoc").style.display = "initial";
+    document.getElementById("curCity").style.display = "none";    
   }
 }) ();
 
