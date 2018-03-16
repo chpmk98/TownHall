@@ -1,4 +1,3 @@
-
 /*This is on the headbar */
 
 #cityButton {
@@ -18,12 +17,13 @@
 	box-shadow: none;
   border-radius: 2px;
   width: 17.5%;
-  height: 9%;
-  padding: 1%;
+  height: 7%;
+  padding: .5%;
   margin-top: 21%;
   margin-left: -17.5%;
   background-color: #CCE3EF;
   padding-bottom: 1%;
+  font-size: 150%;
 }
 
 #profilePic {
@@ -43,9 +43,9 @@ img{
 }
 
 #profilePanel {
-  margin-top: 2%;
+  margin-top: 1%;
   position: sticky;
-  width: 18%;
+  width: 17.5%;
   left: 4%;
   background-color: #CCE3EF;
 }
@@ -106,10 +106,197 @@ img{
   float: right;
   margin-left: 20%;
   margin-right: -10%;
-  margin-top: -69.5%;
+  margin-top: -67.5%;
 }
 
 .aPost {
   margin-right: 0px;
+}
 
+
+/* This is the chat functionality */
+#chatDropDown{
+  width: 96%; /*width: 10.5 */
+  height: 35%;  /* 26 */
+  z-index: 3;
+  position: absolute; /*position relative */
+  top: -14px; /*top -89*/
+  left: 0%;  /* 20 */
+  background-color: #F2F2F2;
+  border: 5px solid #405763; /*#cdcdcd 3px*/
+  border-radius: 5px;
+  display: none;
+
+
+
+
+
+}
+#dropdownTitle{
+  position: relative;
+  top: 0px;
+  font-weight: bold;
+  font-size: 150%;
+  padding-left: 5px;
+  padding-bottom: 0px;
+}
+
+/*#triangle {
+  position: relative;
+  top: -24px;
+  left: 50px;
+	width: 0;
+	height: 0;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+	border-bottom: 20px solid #405763;
+  margin: 0px;
+}*/
+
+#chatOption1{
+  font-weight: none;
+  /*border-top: 3px solid #1D3440;*/
+  padding: 10px;
+  background-color: #cdcdcd;
+  position: relative;
+  top: -15px;
+  width: 100%;
+  margin-top: 10%;
+  text-align: left;
+  font-size: 110%;
+}
+
+#chatOption2{
+  font-weight: none;
+  /*border-top: 3px solid #1D3440;*/
+  padding: 10px;
+  background-color: #f2f2f2;
+  position: relative;
+  top: -15px;
+}
+#chatOption3{
+  font-weight: none;
+  /*border-top: 3px solid #1D3440;*/
+  padding: 10px;
+  background-color: #cdcdcd;
+  position: relative;
+  top: -12px;
+  width: 100%;
+  text-align: left;
+  font-size: 110%;
+}
+
+
+#chatScreen{
+    height: 340px;
+    width: 18%;
+    display: none; /*onclick it becomes visible.*/
+    z-index: 1;
+    position: fixed;
+    bottom: 0%;
+    right: 3.5%;
+    border: 5px solid #405763;
+    border-bottom: none;
+    border-radius: 5px;
+    background-color: #e9e9e9;
+
+}
+
+#chatTitle {
+    font-weight: bold;
+    margin-left: 30%;
+}
+
+#X {
+  position: relative;
+  left: 90%;
+  top: -22px;
+}
+
+input[type = text]{
+  height: 12%;
+  width: 70%;
+  font-size: 80%;
+  display: inline-block;
+  border: 2px solid #CCE3EF;
+  background-color: white;
+  border-radius: 5px;
+  float: right;
+  margin-right: 2px;
+}
+.message{
+  height: 12%;
+  width: 70%;
+  font-size: 80%;
+  display: inline-block;
+}
+
+.chatright {
+    border: 2px solid #dedede;
+    background-color: #cdcdcd;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    float: right;
+}
+
+/* Darker chat container */
+.chatleft {
+    border-color: #ccc;
+    background-color: #ddd;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.chat3{
+  padding-top: 0%;
+  height:18%;
+}
+
+#chat5{
+  display: none;
+  border: 2px solid #dedede;
+  background-color: #cdcdcd;
+  height: 10%;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+  margin-right: 5px;
+  padding-left: 5px;
+  float: right;
+}
+
+#sendMessage{
+  background-color: #CCE3EF;
+  position: fixed;
+  bottom: 5px;
+  left: 1165px;
+  border-radius: 2px;
+}
+
+p{
+  margin: 0px;
+  margin-top: 3px;
+}
+
+
+/* Style time text */
+.time-right {
+    float: right;
+    color: #aaa;
+    margin: 0px;
+    margin-top: 9px;
+}
+
+/* Style time text */
+.time-left {
+    float: left;
+    color: #999;
+    margin: 0px;
+    margin-top: 9px;
 }
