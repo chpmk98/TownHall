@@ -1,6 +1,11 @@
 ﻿* {
 	box-sizing: border-box
 }
+
+#signIn {
+	background-color: #1D3440;
+}
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
 	width: 100%;
