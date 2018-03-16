@@ -147,3 +147,27 @@ hr {
 	position: relative;
 	margin-top: 5px;
 }
+
+#yesCheck input ~ .checkmark {
+	background-color: #DAE9B0;
+}
+
+#yesCheck:hover input ~ .checkmark {
+	background-color: #BED975;
+}
+
+#yesCheck input:checked ~ .checkmark {
+	background-color: #A2C93A;
+}
+
+#noCheck input ~ .checkmark {
+	background-color: #F99E9A;
+}
+
+#noCheck:hover input ~ .checkmark {
+	background-color: #F5554D;
+}
+
+#no input:checked ~ .checkmark {
+	background-color: #E3170D;
+}
