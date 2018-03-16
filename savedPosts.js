@@ -37,7 +37,8 @@ var saveButts = document.getElementsByClassName("postSave");
 
 	// Filters the page by what is already entered (useful when
 	// nagivating to this page with the back button)
-	document.getElementById("startFilter").click();
+	doTheFilter();
+	console.log("Should be filtered");
 
 	for(var i = 0; i < saveButts.length; i++) {
 		// Adds clicking functionality to each save button
@@ -113,7 +114,9 @@ function resetAllFilters() {
 // If there is no type selected, there is no filtering
 // done by type. Similarly, if no topic is selected, there
 // is no filtering done by topic.
-document.getElementById("startFilter").onclick = function() {
+document.getElementById("startFilter").addEventListener("click", doTheFilter);
+
+function doTheFilter() {
 	hideAllPosts();
 	
 	// Shows all the posts of the checked topics
