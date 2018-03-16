@@ -42,6 +42,55 @@ var saveButts = document.getElementsByClassName("postSave");
 			saveButts[i].innerHTML = savedButtText;
 		}
 	}
+
+	// Checks filters for school (2), life (4), and zoning (5), as per
+	// Rebecca's interests
+	filterChecks[2].getElementsByTagName("input")[0].checked = true;
+	filterChecks[4].getElementsByTagName("input")[0].checked = true;
+	filterChecks[5].getElementsByTagName("input")[0].checked = true;
+
+//The rest of the code implements the filtering for My Interests
+	hideAllPosts();
+	
+	// Shows all the posts of the checked topics
+	var numTopics = 0;
+	for(var i = 2; i < filterChecks.length; i++) {
+		if(filterChecks[i].getElementsByTagName("input")[0].checked) {
+			var topicName = filterChecks[i].id;
+			var postName = topicName.substring(0, topicName.length - 5)+"Post";
+			var topicalPosts = document.getElementsByClassName(postName);
+			
+			for(var j = 0; j < topicalPosts.length; j++) {
+				topicalPosts[j].style.display = "initial";
+			}
+			
+			numTopics++;
+		}
+	}
+	// If no topics were checked, show all the topics
+	if(numTopics == 0) {showAllPosts();}
+
+	// Sees how many type filters are checked
+	var numTypes = 0;
+	for(var i = 0; i < 2; i++) {
+		if(filterChecks[i].getElementsByTagName("input")[0].checked) {numTypes++;}
+	}
+
+	// If either 0 or both type filters are checked, nothing is necessary.
+	// Hides news or discussion posts if their boxes are unchecked
+	if(numTypes == 1) {
+		for(var i = 0; i < 2; i++) {
+			if(!filterChecks[i].getElementsByTagName("input")[0].checked) {
+				var iconName = filterChecks[i].getElementsByTagName("i")[0].classList[0];
+			
+				for(var j = 0; j < allPosts.length; j++) {
+					if(allPosts[j].getElementsByTagName("i")[0].classList[0] == iconName) {
+						allPosts[j].style.display = "none"
+					}
+				}
+			}
+		}
+	}
 }) ();
 
 // Closing the banner keeps it closed for 30 seconds, even if you leave
@@ -72,8 +121,6 @@ function updateAllSavedPCs() {
 		document.cookie = "savedPC"+i+"="+saveButts[i].innerHTML;
 	}
 }
-
-/* Filtering is not implemented in My Interests at the moment
 
 // Shows all the posts and unchecks all the filter check boxes
 document.getElementById("resetFilter").onclick = function() {
@@ -144,7 +191,7 @@ function showAllPosts() {
 	for(var i = 0; i < allPosts.length; i++) {
 		allPosts[i].style.display = "initial";
 	}
-} */
+}
 
 // Takes a cookie label and returns the value stored in the cookie
 // If there is no such cookie, returns ""

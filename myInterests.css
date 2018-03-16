@@ -2,3 +2,7 @@
 #myInterests {
 	background-color: #1D3440;
 }
+
+#filterPanel {
+	display: none;
+}
