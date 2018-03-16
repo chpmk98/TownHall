@@ -19,6 +19,7 @@
   }
 }) ();
 
+/*
 function submitForm() {
   var tracker = 0; //if tracker is not equal to zero, don't submit form
   if(document.getElementById("talkFirstName").value == '') {
@@ -55,7 +56,7 @@ function popUpSuccess() {
 
 function popUpFail() {
   alert("Please Fill Out All Fields")
-}
+}*/
 
 // Takes a cookie label and returns the value stored in the cookie
 // If there is no such cookie, returns ""
