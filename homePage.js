@@ -19,6 +19,8 @@ var saveButts = document.getElementsByClassName("postSave");
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	}
 
+	console.log("signedIn cookie value is: " + getCookie("signedIn"));
+
 	// Modifies the headbar depending on who's signed in
 	if(getCookie("signedIn") === "mayor") {
 		document.getElementById("TtYCO").style.display = "none";
