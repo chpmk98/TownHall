@@ -118,7 +118,7 @@ img{
 #chatDropDown{
   width: 96%; /*width: 10.5 */
   height: 35%;  /* 26 */
-  z-index: 3;
+  z-index: 5;
   position: absolute; /*position relative */
   top: -14px; /*top -89*/
   left: 0%;  /* 20 */
