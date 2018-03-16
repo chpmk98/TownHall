@@ -74,6 +74,8 @@ function updateAllSavedPCs() {
 	}
 }
 
+/* Filtering is not implemented in My Interests at the moment
+
 // Shows all the posts and unchecks all the filter check boxes
 document.getElementById("resetFilter").onclick = function() {
 	showAllPosts();
@@ -143,7 +145,7 @@ function showAllPosts() {
 	for(var i = 0; i < allPosts.length; i++) {
 		allPosts[i].style.display = "initial";
 	}
-}
+} */
 
 // Takes a cookie label and returns the value stored in the cookie
 // If there is no such cookie, returns ""
