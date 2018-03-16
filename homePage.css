@@ -2,3 +2,7 @@
 #websiteName {
 	background-color: #1D3440;
 }
+
+#pageActionButton {
+	display: none;
+}

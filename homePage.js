@@ -27,11 +27,13 @@ var saveButts = document.getElementsByClassName("postSave");
 		document.getElementById("signIn").style.display = "none";
 		document.getElementById("MaCA").style.display = "initial";
 		document.getElementById("mayorProfile").style.display = "initial";
+		document.getElementById("pageActionButton").style.display = "initial";
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	} else if(getCookie("signedIn") === "rebmeistro") {
 		document.getElementById("signIn").style.display = "none";
 		document.getElementById("myInterests").style.display = "initial";
 		document.getElementById("rebProfile").style.display = "initial";
+		document.getElementById("pageActionButton").style.display = "initial";
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	}
 
