@@ -3,7 +3,7 @@ document.getElementById("signupbtn").addEventListener("click", login);
 function login(){
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-  if (username==="mayor" && password==="evanston"){
+  if (username==="mayor" && password==="EvanstonROX60201"){
     loginMayor();
   } else if (username==="rebmeistro" && password=="EECS330ismyJAM!"){
     loginReb();
