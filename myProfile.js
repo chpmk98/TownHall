@@ -5,7 +5,7 @@ document.getElementById("signIn").addEventListener("click", signOut);
 (function() {
 	console.log("signedIn cookie value is: " + getCookie("signedIn"));
 
-	document.getElementById("MaCA").style.display = "initial";
+	document.getElementById("TtYCO").style.display = "initial";
 	document.getElementById("myInterests").style.display = "initial";
 }) ();
 
