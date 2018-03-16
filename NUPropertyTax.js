@@ -33,8 +33,8 @@ inputField.addEventListener("keyup", function(event) {
 		document.getElementsByClassName("signInPrompt")[0].style.display = "none";
 	} else {
 		// Hides the reply boxes if not signed in
-		for(var i = 0; i < getElementsByTagName("input").length; i++) {
-			getElementsByTagName("input")[i].style.display = "none";
+		for(var i = 0; i < document.getElementsByTagName("input").length; i++) {
+			document.getElementsByTagName("input")[i].style.display = "none";
 		}
 
 		document.getElementById("evanstonLoc").style.display = "initial";
