@@ -98,8 +98,8 @@ img{
 
 #profileEdit {
   border-radius: 3px;
-  margin-left: -17.5%;
-  margin-top: -2%;
+  margin-left: 80%;
+  margin-top: 5%;
   background-color: #CCE3EF;
 }
 #profileActivity{
@@ -180,7 +180,7 @@ img{
   padding: 10px;
   background-color: #cdcdcd;
   position: relative;
-  top: -12px;
+  top: -10px;
   width: 100%;
   text-align: left;
   font-size: 110%;
