@@ -24,8 +24,8 @@
 
 #profileEdit {
   border-radius: 3px;
-  margin-left: -17.5%;
-  margin-top: -2%;
+  margin-left: 17%;
+  margin-top: 10%;
   margin-bottom: 1%;
   background-color: #CCE3EF;
 }
@@ -42,12 +42,12 @@
 }
 
 #profilePanel {
-  margin-top: 2%;
-  position: sticky;
+  margin-top: 3%;
+  position: relative;
   width: 18%;
   left: 4%;
   background-color: #CCE3EF;
-  margin: 0;
+  margin: 0px;
 }
 
 #biography {
