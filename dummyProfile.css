@@ -24,8 +24,8 @@
 
 #profileEdit {
   border-radius: 3px;
-  margin-left: 20%;
-  margin-top: 5%;
+  margin-left: 16%;
+  margin-top: 2%;
   margin-bottom: 1%;
   background-color: #CCE3EF;
 }
@@ -107,13 +107,15 @@
   font-size: 200%;
   font-weight: bold;
   margin-left: 65%;
-  margin-bottom: -6%;
+  margin-bottom: .5%;
+  position: relative;
+  top: 5px;
 }
 
 #profileActivity{
   margin-left: 20%;
   margin-right: -10%;
-  margin-top: -69%;
+  margin-top: -67.5%;
 }
 
 .aPost {
@@ -307,4 +309,3 @@ p{
     margin: 0px;
     margin-top: 9px;
 }
-
