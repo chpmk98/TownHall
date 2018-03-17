@@ -24,7 +24,7 @@
 
 #profileEdit {
   border-radius: 3px;
-  margin-left: 90%;
+  margin-left: 80%;
   margin-top: 10%;
   margin-bottom: 1%;
   background-color: #CCE3EF;
@@ -44,6 +44,7 @@
 #profilePanel {
   margin-top: 6%;
   position: relative;
+  top: 20px;
   width: 18%;
   left: 4%;
   background-color: #CCE3EF;
