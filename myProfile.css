@@ -98,15 +98,15 @@ img{
 
 #profileEdit {
   border-radius: 3px;
-  margin-left: 80%;
-  margin-top: 5%;
+  margin-left: 15%;
+  margin-top: -2%;
   background-color: #CCE3EF;
 }
 #profileActivity{
   float: right;
   margin-left: 20%;
   margin-right: -10%;
-  margin-top: -67.5%;
+  margin-top: -68%;
 }
 
 .aPost {
