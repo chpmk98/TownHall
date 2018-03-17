@@ -24,8 +24,8 @@
 
 #profileEdit {
   border-radius: 3px;
-  margin-left: 80%;
-  margin-top: 10%;
+  margin-left: 20%;
+  margin-top: 5%;
   margin-bottom: 1%;
   background-color: #CCE3EF;
 }
@@ -107,7 +107,7 @@
   font-size: 200%;
   font-weight: bold;
   margin-left: 65%;
-  margin-bottom: -9%;
+  margin-bottom: -6%;
 }
 
 #profileActivity{
